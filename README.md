@@ -17,7 +17,7 @@ export TPU_NAME=t5-${PROJECT_ID}
 # Choose TPU instance based on model
 # 11B   : v3-8
 # Others: v2-8
-ctpu up   --name=$TPU_NAME   --project=$PROJECT  --zone=$ZONE   --tpu-size=v2-8
+ctpu up   --name=$TPU_NAME   --project=$PROJECT_ID  --zone=$ZONE   --tpu-size=v2-8
 
 
 # SSH into TPU instance
