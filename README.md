@@ -24,5 +24,9 @@ ctpu up   --name=$TPU_NAME   --project=$PROJECT_ID  --zone=$ZONE   --tpu-size=v2
 # Do not create virtualenv since pip installed tensorflow-gpu does not work well with TPU
 pip3 install t5
 
+
+git clone https://github.com/chuanli11/t5-tpu.git
+cd t5-tpu
+
 python3 finetune_t5_cbqa.py
 ```
