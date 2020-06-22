@@ -2,16 +2,16 @@ WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python
 Instructions for updating:
 non-resource variables are not supported in the long term
 INFO:tensorflow:Loading NQ from cache.
-2020-06-22 07:41:58.455063: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
-2020-06-22 07:41:58.474143: I tensorflow/core/platform/profile_utils/cpu_utils.cc:102] CPU Frequency: 2300000000 Hz
-2020-06-22 07:41:58.474920: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x6774f00 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
-2020-06-22 07:41:58.474959: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
-2020-06-22 07:41:59.563407: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job worker -> {0 -> 10.240.1.2:8470}
-2020-06-22 07:41:59.563460: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job localhost -> {0 -> localhost:46308}
-2020-06-22 07:41:59.587726: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job worker -> {0 -> 10.240.1.2:8470}
-2020-06-22 07:41:59.587787: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job localhost -> {0 -> localhost:46308}
-2020-06-22 07:41:59.588470: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:390] Started server with target: grpc://localhost:46308
-2020-06-22 07:42:00.488026: W tensorflow/core/kernels/data/cache_dataset_ops.cc:794] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2020-06-22 18:48:28.697092: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-06-22 18:48:28.702812: I tensorflow/core/platform/profile_utils/cpu_utils.cc:102] CPU Frequency: 2300000000 Hz
+2020-06-22 18:48:28.703228: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x6c249d0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-06-22 18:48:28.703263: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-06-22 18:48:29.642203: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job worker -> {0 -> 10.240.1.2:8470}
+2020-06-22 18:48:29.642255: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job localhost -> {0 -> localhost:47638}
+2020-06-22 18:48:29.682910: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job worker -> {0 -> 10.240.1.2:8470}
+2020-06-22 18:48:29.682965: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job localhost -> {0 -> localhost:47638}
+2020-06-22 18:48:29.683607: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:390] Started server with target: grpc://localhost:47638
+2020-06-22 18:48:30.541345: W tensorflow/core/kernels/data/cache_dataset_ops.cc:794] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
 INFO:absl:Load dataset info from gs://caramel-spot-280923/data/trivia_qa/unfiltered.nocontext/1.1.0
 INFO:absl:Reusing dataset trivia_qa (gs://caramel-spot-280923/data/trivia_qa/unfiltered.nocontext/1.1.0)
 INFO:absl:Constructing tf.data.Dataset for split None, from gs://caramel-spot-280923/data/trivia_qa/unfiltered.nocontext/1.1.0
@@ -19,7 +19,7 @@ INFO:absl:Load dataset info from gs://caramel-spot-280923/data/trivia_qa/unfilte
 INFO:absl:Reusing dataset trivia_qa (gs://caramel-spot-280923/data/trivia_qa/unfiltered.nocontext/1.1.0)
 INFO:absl:Constructing tf.data.Dataset for split validation, from gs://caramel-spot-280923/data/trivia_qa/unfiltered.nocontext/1.1.0
 INFO:absl:Load dataset info from gs://caramel-spot-280923/data/trivia_qa/unfiltered.nocontext/1.1.0
-INFO:tensorflow:Using config: {'_model_dir': 'gs://caramel-spot-280923/models/small', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+INFO:tensorflow:Using config: {'_model_dir': 'gs://caramel-spot-280923/models-v3-8/small', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
 cluster_def {
   job {
     name: "worker"
@@ -30,26 +30,26 @@ cluster_def {
   }
 }
 isolate_session_state: true
-, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': None, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': ClusterSpec({'worker': ['10.240.1.2:8470']}), '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': 'grpc://10.240.1.2:8470', '_evaluation_master': 'grpc://10.240.1.2:8470', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1, '_tpu_config': TPUConfig(iterations_per_loop=100, num_shards=None, num_cores_per_replica=1, per_host_input_for_training=4, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_cluster': <tensorflow.python.distribute.cluster_resolver.tpu_cluster_resolver.TPUClusterResolver object at 0x7f23281d1ef0>}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': None, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': ClusterSpec({'worker': ['10.240.1.2:8470']}), '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': 'grpc://10.240.1.2:8470', '_evaluation_master': 'grpc://10.240.1.2:8470', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1, '_tpu_config': TPUConfig(iterations_per_loop=100, num_shards=None, num_cores_per_replica=1, per_host_input_for_training=4, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_cluster': <tensorflow.python.distribute.cluster_resolver.tpu_cluster_resolver.TPUClusterResolver object at 0x7faca0755e48>}
 INFO:tensorflow:_TPUContext: eval_on_tpu True
 INFO:tensorflow:Querying Tensorflow master (grpc://10.240.1.2:8470) for TPU system metadata.
-2020-06-22 07:42:06.136409: W tensorflow/core/distributed_runtime/rpc/grpc_session.cc:373] GrpcSession::ListDevices will initialize the session with an empty graph and other defaults because the session has not yet been created.
+2020-06-22 18:48:36.770943: W tensorflow/core/distributed_runtime/rpc/grpc_session.cc:373] GrpcSession::ListDevices will initialize the session with an empty graph and other defaults because the session has not yet been created.
 INFO:tensorflow:Initializing TPU system (master: grpc://10.240.1.2:8470) to fetch topology for model parallelism. This might take a while.
 INFO:tensorflow:Found TPU system:
 INFO:tensorflow:*** Num TPU Cores: 8
 INFO:tensorflow:*** Num TPU Workers: 1
 INFO:tensorflow:*** Num TPU Cores Per Worker: 8
-INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:CPU:0, CPU, -1, -8735763801662743395)
-INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:0, TPU, 17179869184, -5739513032754397500)
-INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:1, TPU, 17179869184, -8177865420937957597)
-INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:2, TPU, 17179869184, -7607530426503483209)
-INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:3, TPU, 17179869184, -7469148872016136062)
-INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:4, TPU, 17179869184, -4240477194581581134)
-INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:5, TPU, 17179869184, -394626129850239444)
-INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:6, TPU, 17179869184, 2816095439854893069)
-INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:7, TPU, 17179869184, -3657502389813717080)
-INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU_SYSTEM:0, TPU_SYSTEM, 8589934592, 7065395276588826057)
-INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:XLA_CPU:0, XLA_CPU, 17179869184, -6233384550011856633)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:CPU:0, CPU, -1, 6202188869341575872)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:0, TPU, 17179869184, -7338296055467980985)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:1, TPU, 17179869184, -8943336714080388507)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:2, TPU, 17179869184, -7815788356498861921)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:3, TPU, 17179869184, 5685911169697070798)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:4, TPU, 17179869184, -5445848963422586829)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:5, TPU, 17179869184, -5130745599551856036)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:6, TPU, 17179869184, -6704224619882591205)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:7, TPU, 17179869184, -6686936246163688700)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU_SYSTEM:0, TPU_SYSTEM, 17179869184, 6006474323969912448)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:XLA_CPU:0, XLA_CPU, 17179869184, 2227643492153045818)
 WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
 Instructions for updating:
 If using Keras pass *_constraint arguments to layers.
@@ -88,8 +88,8 @@ INFO:tensorflow:device_assignment.core_assignment: [[[0 0 0]]
 
  [[1 1 1]]]
 WARNING:tensorflow:SimdMeshImpl ignoring devices ['', '', '', '', '', '', '', '']
-INFO:tensorflow:SimdMeshImpl init: Shape[batch=8] LayoutRules{('heads', 'model'), ('batch', 'batch'), ('vocab', 'model'), ('ensemble', 'ensemble'), ('d_ff', 'model'), ('experts', 'batch')}
-INFO:tensorflow:Device Assignment: <tensorflow.python.tpu.device_assignment.DeviceAssignment object at 0x7f23103114a8>
+INFO:tensorflow:SimdMeshImpl init: Shape[batch=8] LayoutRules{('experts', 'batch'), ('ensemble', 'ensemble'), ('heads', 'model'), ('batch', 'batch'), ('vocab', 'model'), ('d_ff', 'model')}
+INFO:tensorflow:Device Assignment: <tensorflow.python.tpu.device_assignment.DeviceAssignment object at 0x7faca00daf60>
 INFO:tensorflow:serialize_num_microbatches: tokens_per_microbatch_per_replica=8192 batch_dim=Dimension(name='batch', size=256) sequence_length={'inputs': 128, 'targets': 32} batch_per_replica=32 num_microbatches=1
 WARNING:tensorflow:Using default tf glorot_uniform_initializer for variable encoder/block_000/layer_000/SelfAttention/relative_attention_bias  The initialzer will guess the input and output dimensions  based on dimension order.
 WARNING:tensorflow:Using default tf glorot_uniform_initializer for variable decoder/block_000/layer_000/SelfAttention/relative_attention_bias  The initialzer will guess the input and output dimensions  based on dimension order.
@@ -304,7 +304,7 @@ Instructions for updating:
 Prefer Variable.assign which has equivalent behavior in 2.X.
 INFO:tensorflow:Initialized dataset iterators in 1 seconds
 INFO:tensorflow:Installing graceful shutdown hook.
-2020-06-22 07:43:14.806308: W tensorflow/core/distributed_runtime/rpc/grpc_session.cc:373] GrpcSession::ListDevices will initialize the session with an empty graph and other defaults because the session has not yet been created.
+2020-06-22 18:49:19.828462: W tensorflow/core/distributed_runtime/rpc/grpc_session.cc:373] GrpcSession::ListDevices will initialize the session with an empty graph and other defaults because the session has not yet been created.
 INFO:tensorflow:Creating heartbeat manager for ['/job:worker/replica:0/task:0/device:CPU:0']
 INFO:tensorflow:Configuring worker heartbeat: shutdown_mode: WAIT_FOR_COORDINATOR
 
@@ -315,13 +315,59 @@ INFO:tensorflow:Done with copy master to slices.
 INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 1000000...
 INFO:tensorflow:Before Save.
 INFO:tensorflow:About to write a checkpoint
-INFO:tensorflow:Saving checkpoints for 1000000 into gs://caramel-spot-280923/models/small/model.ckpt.
+INFO:tensorflow:Saving checkpoints for 1000000 into gs://caramel-spot-280923/models-v3-8/small/model.ckpt.
 INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 1000000...
 INFO:tensorflow:Done writing checkpoint.
 INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
 INFO:tensorflow:Outfeed finished for iteration (0, 0)
-INFO:tensorflow:loss = 0.099609375, step = 1000100
+INFO:tensorflow:loss = 0.09863281, step = 1000100
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.09765625, step = 1000200 (10.648 sec)
+INFO:tensorflow:global_step/sec: 9.39139
+INFO:tensorflow:examples/sec: 2404.2
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.09277344, step = 1000300 (10.392 sec)
+INFO:tensorflow:global_step/sec: 9.62241
+INFO:tensorflow:examples/sec: 2463.34
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.092285156, step = 1000400 (10.378 sec)
+INFO:tensorflow:global_step/sec: 9.63593
+INFO:tensorflow:examples/sec: 2466.8
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.09375, step = 1000500 (8.273 sec)
+INFO:tensorflow:global_step/sec: 12.0883
+INFO:tensorflow:examples/sec: 3094.6
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.09082031, step = 1000600 (8.297 sec)
+INFO:tensorflow:global_step/sec: 12.0527
+INFO:tensorflow:examples/sec: 3085.49
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (6, 78)
+INFO:tensorflow:loss = 0.087890625, step = 1000700 (10.758 sec)
+INFO:tensorflow:global_step/sec: 9.29501
+INFO:tensorflow:examples/sec: 2379.52
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0859375, step = 1000800 (9.477 sec)
+INFO:tensorflow:global_step/sec: 10.5514
+INFO:tensorflow:examples/sec: 2701.16
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0859375, step = 1000900 (8.262 sec)
+INFO:tensorflow:global_step/sec: 12.1046
+INFO:tensorflow:examples/sec: 3098.78
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.087402344, step = 1001000 (8.264 sec)
+INFO:tensorflow:global_step/sec: 12.1
+INFO:tensorflow:examples/sec: 3097.61
 INFO:tensorflow:Stop infeed thread controller
 INFO:tensorflow:Shutting down InfeedController thread.
 INFO:tensorflow:InfeedController received shutdown signal, stopping.
@@ -333,14 +379,14 @@ INFO:tensorflow:OutfeedController received shutdown signal, stopping.
 INFO:tensorflow:Outfeed thread finished, shutting down.
 INFO:tensorflow:outfeed marked as finished
 INFO:tensorflow:Shutdown TPU system.
-INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 1000100...
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 1001000...
 INFO:tensorflow:Before Save.
 INFO:tensorflow:About to write a checkpoint
-INFO:tensorflow:Saving checkpoints for 1000100 into gs://caramel-spot-280923/models/small/model.ckpt.
-INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 1000100...
+INFO:tensorflow:Saving checkpoints for 1001000 into gs://caramel-spot-280923/models-v3-8/small/model.ckpt.
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 1001000...
 INFO:tensorflow:Done writing checkpoint.
 INFO:tensorflow:Done with the session.
-INFO:tensorflow:Loss for final step: 0.099609375.
+INFO:tensorflow:Loss for final step: 0.087402344.
 INFO:tensorflow:training_loop marked as finished
 Setting up GCS access...
 Running on TPU: grpc://10.240.1.2:8470
@@ -351,33 +397,31 @@ A few raw validation examples...
 {'question': b'where was the world economic forum held this year?', 'answer': b'Davos, a mountain resort in Graub\xc3\xbcnden, in the eastern Alps region of Switzerland'}
 {'question': b'who has made the most premier league appearances?', 'answer': b'Gareth Barry'}
 A few preprocessed validation examples...
-{'inputs_plaintext': b'trivia question: when is the next scandal episode coming out?', 'inputs': array([22377,   822,    10,   116,    19,     8,   416, 14605,  5640,
-        1107,    91,    58,     1]), 'targets_plaintext': b'february 1, 2018', 'targets': array([29976,    76,  1208,  1914,   846,     1])}
-{'inputs_plaintext': b'trivia question: when was the national flag of india adopted?', 'inputs': array([22377,   822,    10,   116,    47,     8,  1157,  5692,    13,
-       18222,  7546,    58,     1]), 'targets_plaintext': b'during a meeting of the constituent assembly held on 22 july 1947', 'targets': array([  383,     3,     9,  1338,    13,     8, 17429,  7889,  1213,
-          30,  1630,     3,  2047,   120, 23992,     1])}
-{'inputs_plaintext': b'trivia question: who has the most international goals of all time?', 'inputs': array([22377,   822,    10,   113,    65,     8,   167,  1038,  1766,
-          13,    66,    97,    58,     1]), 'targets_plaintext': b'ali daei', 'targets': array([   3, 4288,  836,   15,   23,    1])}
-{'inputs_plaintext': b'trivia question: how many counties does the state of georgia have?', 'inputs': array([22377,   822,    10,   149,   186, 16227,   405,     8,   538,
-          13,   873,  1677,    23,     9,    43,    58,     1]), 'targets_plaintext': b'159', 'targets': array([    3, 27904,     1])}
-{'inputs_plaintext': b'trivia question: who is the actor that plays ducky on ncis?', 'inputs': array([22377,   822,    10,   113,    19,     8,  7556,    24,  4805,
-       14938,    63,    30,     3,    29,    75,   159,    58,     1]), 'targets_plaintext': b'david mccallum', 'targets': array([ 836, 6961,    3,   51,   75, 1489, 5171,    1])}
+{'inputs_plaintext': b'trivia question: the probability of making a type i error when retaining ho at the .05 level of significance is?', 'inputs': array([22377,   822,    10,     8, 15834,    13,   492,     3,     9,
+         686,     3,    23,  3505,   116,     3, 19513,  3534,    44,
+           8,     3,     5,  3076,   593,    13, 11978,    19,    58,
+           1]), 'targets_plaintext': b'5%', 'targets': array([   3, 2712,    1])}
+{'inputs_plaintext': b'trivia question: when did the us cut off trade with cuba?', 'inputs': array([22377,   822,    10,   116,   410,     8,   178,  1340,   326,
+        1668,    28,     3, 16377,    58,     1]), 'targets_plaintext': b'1961', 'targets': array([21018,     1])}
+{'inputs_plaintext': b'trivia question: where is the college championship game being played at?', 'inputs': array([22377,   822,    10,   213,    19,     8,  1900, 10183,   467,
+         271,  1944,    44,    58,     1]), 'targets_plaintext': b'mercedes-benz stadium in atlanta, georgia', 'targets': array([    3,   935,   565,  1395,    18, 19738, 14939,    16,    44,
+        6761,     9,     6,   873,  1677,    23,     9,     1])}
+{'inputs_plaintext': b'trivia question: which animal is the carrier of the h1n1 virus?', 'inputs': array([22377,   822,    10,    84,  2586,    19,     8,  9568,    13,
+           8,     3,   107,   536,    29,   536,  6722,    58,     1]), 'targets_plaintext': b'pigs', 'targets': array([   3, 9905,    7,    1])}
+{'inputs_plaintext': b"trivia question: when did men's curling start in the olympics?", 'inputs': array([22377,   822,    10,   116,   410,  1076,    31,     7, 18322,
+          53,   456,    16,     8,     3,    32,   120,    51,  6174,
+           7,    58,     1]), 'targets_plaintext': b'1998', 'targets': array([6260,    1])}
 A few raw validation examples...
 {'answer': {'aliases': array([b'Torquemada (disambiguation)', b'Torquemada'], dtype=object), 'matched_wiki_entity_name': b'', 'normalized_aliases': array([b'torquemada', b'torquemada disambiguation'], dtype=object), 'normalized_matched_wiki_entity_name': b'', 'normalized_value': b'torquemada', 'type': b'WikipediaEntity', 'value': b'Torquemada'}, 'entity_pages': {'doc_source': array([], dtype=object), 'filename': array([], dtype=object), 'title': array([], dtype=object), 'wiki_context': array([], dtype=object)}, 'question': b'In 1483, who was appointed the first grand inquisitor of the Spanish Inquisition?', 'question_id': b'qw_16011', 'question_source': b'http://www.quizwise.com/', 'search_results': {'description': array([], dtype=object), 'filename': array([], dtype=object), 'rank': array([], dtype=int32), 'search_context': array([], dtype=object), 'title': array([], dtype=object), 'url': array([], dtype=object)}}
 {'answer': {'aliases': array([b'Austerlitz (disambiguation)', b'Austerlitz', b'AUSTERLITZ'],
       dtype=object), 'matched_wiki_entity_name': b'', 'normalized_aliases': array([b'austerlitz', b'austerlitz disambiguation'], dtype=object), 'normalized_matched_wiki_entity_name': b'', 'normalized_value': b'austerlitz', 'type': b'WikipediaEntity', 'value': b'AUSTERLITZ'}, 'entity_pages': {'doc_source': array([], dtype=object), 'filename': array([], dtype=object), 'title': array([], dtype=object), 'wiki_context': array([], dtype=object)}, 'question': b'Which celebrated battle was fought near Brno on 2nd December 1805?', 'question_id': b'dpql_4053', 'question_source': b'https://derbyshirepubquizleague.wordpress.com/', 'search_results': {'description': array([], dtype=object), 'filename': array([], dtype=object), 'rank': array([], dtype=int32), 'search_context': array([], dtype=object), 'title': array([], dtype=object), 'url': array([], dtype=object)}}
 A few preprocessed validation examples...
-{'inputs_plaintext': b'trivia question: name either of the south american countries that have no land border with brazil?', 'inputs': array([22377,   822,    10,   564,   893,    13,     8,  3414, 10211,
-        1440,    24,    43,   150,  1322,  4947,    28,  3858,   702,
-          40,    58,     1]), 'targets_plaintext': b'chile, ecuador', 'targets': array([   3, 1436,  109,    6,    3,   15, 1071, 7923,    1])}
-{'inputs_plaintext': b'trivia question: "what does ""casa grande"" mean in spanish?"', 'inputs': array([22377,   822,    10,    96,  9170,   405,    96,   121,  6769,
-           9,  3749,   121,   121,  1243,    16,  8438,  1273,  4609,
-           1]), 'targets_plaintext': b'big house', 'targets': array([600, 629,   1])}
-{'inputs_plaintext': b'trivia question: "the dakar rally, formerly known as ""the paris-dakar"", an annual off-road automobile race that began in 1978, has usually been held from paris, france to dakar, senegal. due to political instability in africa, the 2009 rally was run where?"', 'inputs': array([22377,   822,    10,    96,   532,   836,  4031, 13980,     6,
-           3, 14034,   801,    38,    96,   121,   532,   260,   159,
-          18,    26,     9,  4031,   121,  1686,    46,  2041,   326,
-          18,  8635,  8395,  1964,    24,  1553,    16, 14834,     6,
-          65,  1086,   118,  1213,    45,   260,   159,     6,  2515,
-         663,    12,   836,  4031,     6,     3,     7,    35,    15,
-        6191,     5,   788,    12,  1827, 29440,    16, 24040,     6,
-           8,  2464, 13980,    47,   661,   213,  4609,     1]), 'targets_plaintext': b'argentina and chile', 'targets': array([   3, 9917,   77,    9,   11,    3, 1436,  109,    1])}
+{'inputs_plaintext': b'trivia question: what does lager literally mean in german?', 'inputs': array([22377,   822,    10,   125,   405,     3, 13298,  6672,  1243,
+          16, 13692,    58,     1]), 'targets_plaintext': b'storage', 'targets': array([1606,    1])}
+{'inputs_plaintext': b'trivia question: "which us city has the nickname ""beantown"" ?"', 'inputs': array([22377,   822,    10,    96,  3339,   178,   690,    65,     8,
+       24649,    96,   121,   346,   152,  3540,   121,   121,     3,
+        4609,     1]), 'targets_plaintext': b'boston', 'targets': array([3005, 4411,    1])}
+{'inputs_plaintext': b'trivia question: which colourless, poisonous gas, with a smell like geraniums was used in chemical warfare during world war ii?', 'inputs': array([22377,   822,    10,    84,  3243,   924,     6, 14566,  1162,
+        1807,     6,    28,     3,     9,  5949,   114,     3,  1304,
+         152,  2552,     7,    47,   261,    16,  5368, 28229,   383,
+         296,   615,     3,    23,    23,    58,     1]), 'targets_plaintext': b'lewisite', 'targets': array([  90,  210,   23, 3585,    1])}

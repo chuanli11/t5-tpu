@@ -26,6 +26,8 @@ parser.add_argument('--save_per_steps', type=int, default=100000,
                      help='number of steps for save model')
 parser.add_argument('--base_dir', type=str, default='gs://caramel-spot-280923',
                      help='Google storage bucket')
+parser.add_argument('--tpu_type', type=str, default='v2-8',
+                     help='Google TPU instance type')
 args = parser.parse_args()
 
 def main():
@@ -39,7 +41,7 @@ def main():
     if not BASE_DIR or BASE_DIR == "gs://":
       raise ValueError("You must enter a BASE_DIR.")
     DATA_DIR = os.path.join(BASE_DIR, "data")
-    MODELS_DIR = os.path.join(BASE_DIR, "models")
+    MODELS_DIR = os.path.join(BASE_DIR, "models-" + args.tpu_type)
     ON_CLOUD = True
     
     
