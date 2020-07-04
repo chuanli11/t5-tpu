@@ -5,6 +5,7 @@
 # Set up Google Cloud Storage Bucket
 export PROJECT_ID=caramel-spot-280923
 export STORAGE_ZONE=us-central
+export BUCKET=gs://${PROJECT_ID}
 gsutil mb -p ${PROJECT_ID} -c standard -l ${STORAGE_ZONE} -b on ${BUCKET}
 
 
