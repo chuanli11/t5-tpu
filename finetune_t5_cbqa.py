@@ -283,7 +283,12 @@ def main():
             mixture_or_task_name="trivia_all",
             pretrained_model_dir=PRETRAINED_DIR,
             finetune_steps=FINETUNE_STEPS)
-
+    
+    model.batch_size = train_batch_size * 4
+    model.eval(
+            mixture_or_task_name="trivia_all",
+            checkpoint_steps="all"
+    )
 
 if __name__ == "__main__":
     main()
