@@ -2,16 +2,16 @@ WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python
 Instructions for updating:
 non-resource variables are not supported in the long term
 INFO:tensorflow:Loading NQ from cache.
-2020-06-22 15:13:44.476705: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
-2020-06-22 15:13:44.494158: I tensorflow/core/platform/profile_utils/cpu_utils.cc:102] CPU Frequency: 2300000000 Hz
-2020-06-22 15:13:44.494454: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x6f997b0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
-2020-06-22 15:13:44.494491: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
-2020-06-22 15:13:45.556111: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job worker -> {0 -> 10.240.1.2:8470}
-2020-06-22 15:13:45.556163: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job localhost -> {0 -> localhost:46278}
-2020-06-22 15:13:45.598824: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job worker -> {0 -> 10.240.1.2:8470}
-2020-06-22 15:13:45.598881: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job localhost -> {0 -> localhost:46278}
-2020-06-22 15:13:45.599518: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:390] Started server with target: grpc://localhost:46278
-2020-06-22 15:13:46.459327: W tensorflow/core/kernels/data/cache_dataset_ops.cc:794] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2020-07-04 07:13:03.552409: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-07-04 07:13:03.557170: I tensorflow/core/platform/profile_utils/cpu_utils.cc:102] CPU Frequency: 2300000000 Hz
+2020-07-04 07:13:03.557338: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7612500 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-07-04 07:13:03.557363: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-07-04 07:13:04.437431: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job worker -> {0 -> 10.240.1.2:8470}
+2020-07-04 07:13:04.437475: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job localhost -> {0 -> localhost:32689}
+2020-07-04 07:13:04.449499: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job worker -> {0 -> 10.240.1.2:8470}
+2020-07-04 07:13:04.449541: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job localhost -> {0 -> localhost:32689}
+2020-07-04 07:13:04.450073: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:390] Started server with target: grpc://localhost:32689
+2020-07-04 07:13:05.235195: W tensorflow/core/kernels/data/cache_dataset_ops.cc:794] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
 INFO:absl:Load dataset info from gs://caramel-spot-280923/data/trivia_qa/unfiltered.nocontext/1.1.0
 INFO:absl:Reusing dataset trivia_qa (gs://caramel-spot-280923/data/trivia_qa/unfiltered.nocontext/1.1.0)
 INFO:absl:Constructing tf.data.Dataset for split None, from gs://caramel-spot-280923/data/trivia_qa/unfiltered.nocontext/1.1.0
@@ -20,7 +20,7 @@ INFO:absl:Reusing dataset trivia_qa (gs://caramel-spot-280923/data/trivia_qa/unf
 INFO:absl:Constructing tf.data.Dataset for split validation, from gs://caramel-spot-280923/data/trivia_qa/unfiltered.nocontext/1.1.0
 INFO:absl:Load dataset info from gs://caramel-spot-280923/data/trivia_qa/unfiltered.nocontext/1.1.0
 WARNING:tensorflow:The `11B` parameter is too large to fine-tune on the `v2-8` TPU Make sure you have at least a `v3-8` TPU instance.
-INFO:tensorflow:Using config: {'_model_dir': 'gs://caramel-spot-280923/models/11B', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+INFO:tensorflow:Using config: {'_model_dir': 'gs://caramel-spot-280923/models-v3-8/11B', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
 cluster_def {
   job {
     name: "worker"
@@ -31,36 +31,52 @@ cluster_def {
   }
 }
 isolate_session_state: true
-, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': None, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': ClusterSpec({'worker': ['10.240.1.2:8470']}), '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': 'grpc://10.240.1.2:8470', '_evaluation_master': 'grpc://10.240.1.2:8470', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1, '_tpu_config': TPUConfig(iterations_per_loop=100, num_shards=None, num_cores_per_replica=1, per_host_input_for_training=4, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_cluster': <tensorflow.python.distribute.cluster_resolver.tpu_cluster_resolver.TPUClusterResolver object at 0x7f323c2f53c8>}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': None, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': ClusterSpec({'worker': ['10.240.1.2:8470']}), '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': 'grpc://10.240.1.2:8470', '_evaluation_master': 'grpc://10.240.1.2:8470', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1, '_tpu_config': TPUConfig(iterations_per_loop=100, num_shards=None, num_cores_per_replica=1, per_host_input_for_training=4, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_cluster': <tensorflow.python.distribute.cluster_resolver.tpu_cluster_resolver.TPUClusterResolver object at 0x7f73fc1b82e8>}
 INFO:tensorflow:_TPUContext: eval_on_tpu True
+INFO:tensorflow:Skipping training since max_steps has already saved.
+INFO:tensorflow:training_loop marked as finished
+INFO:tensorflow:Using config: {'_model_dir': 'gs://caramel-spot-280923/models-v3-8/11B', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+cluster_def {
+  job {
+    name: "worker"
+    tasks {
+      key: 0
+      value: "10.240.1.2:8470"
+    }
+  }
+}
+isolate_session_state: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': None, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': ClusterSpec({'worker': ['10.240.1.2:8470']}), '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': 'grpc://10.240.1.2:8470', '_evaluation_master': 'grpc://10.240.1.2:8470', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1, '_tpu_config': TPUConfig(iterations_per_loop=100, num_shards=None, num_cores_per_replica=1, per_host_input_for_training=4, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_cluster': <tensorflow.python.distribute.cluster_resolver.tpu_cluster_resolver.TPUClusterResolver object at 0x7f73fc1b82e8>}
+INFO:tensorflow:_TPUContext: eval_on_tpu True
+INFO:absl:Load dataset info from gs://caramel-spot-280923/data/trivia_qa/unfiltered.nocontext/1.1.0
+INFO:absl:Reusing dataset trivia_qa (gs://caramel-spot-280923/data/trivia_qa/unfiltered.nocontext/1.1.0)
+INFO:absl:Constructing tf.data.Dataset for split validation, from gs://caramel-spot-280923/data/trivia_qa/unfiltered.nocontext/1.1.0
+INFO:tensorflow:Checkpoint path gs://caramel-spot-280923/models-v3-8/11B/model.ckpt-1025000
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
 INFO:tensorflow:Querying Tensorflow master (grpc://10.240.1.2:8470) for TPU system metadata.
-2020-06-22 15:13:52.710698: W tensorflow/core/distributed_runtime/rpc/grpc_session.cc:373] GrpcSession::ListDevices will initialize the session with an empty graph and other defaults because the session has not yet been created.
+2020-07-04 07:13:24.028686: W tensorflow/core/distributed_runtime/rpc/grpc_session.cc:373] GrpcSession::ListDevices will initialize the session with an empty graph and other defaults because the session has not yet been created.
 INFO:tensorflow:Initializing TPU system (master: grpc://10.240.1.2:8470) to fetch topology for model parallelism. This might take a while.
 INFO:tensorflow:Found TPU system:
 INFO:tensorflow:*** Num TPU Cores: 8
 INFO:tensorflow:*** Num TPU Workers: 1
 INFO:tensorflow:*** Num TPU Cores Per Worker: 8
-INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:CPU:0, CPU, -1, 6202188869341575872)
-INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:0, TPU, 17179869184, -7338296055467980985)
-INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:1, TPU, 17179869184, -8943336714080388507)
-INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:2, TPU, 17179869184, -7815788356498861921)
-INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:3, TPU, 17179869184, 5685911169697070798)
-INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:4, TPU, 17179869184, -5445848963422586829)
-INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:5, TPU, 17179869184, -5130745599551856036)
-INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:6, TPU, 17179869184, -6704224619882591205)
-INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:7, TPU, 17179869184, -6686936246163688700)
-INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU_SYSTEM:0, TPU_SYSTEM, 17179869184, 6006474323969912448)
-INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:XLA_CPU:0, XLA_CPU, 17179869184, 2227643492153045818)
-WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
-Instructions for updating:
-If using Keras pass *_constraint arguments to layers.
-WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
-Instructions for updating:
-Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:CPU:0, CPU, -1, 8090773040462372524)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:0, TPU, 17179869184, -8480840306729466088)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:1, TPU, 17179869184, 5318052383649341548)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:2, TPU, 17179869184, 929684195595444837)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:3, TPU, 17179869184, 8063554474547837440)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:4, TPU, 17179869184, 798519888827283181)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:5, TPU, 17179869184, 5376565814990520473)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:6, TPU, 17179869184, -8585099969239404635)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:7, TPU, 17179869184, -818437707360590733)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU_SYSTEM:0, TPU_SYSTEM, 17179869184, -5302436633743061315)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:XLA_CPU:0, XLA_CPU, 17179869184, -5771678444937757101)
 INFO:tensorflow:Calling model_fn.
 INFO:absl:Load dataset info from gs://caramel-spot-280923/data/trivia_qa/unfiltered.nocontext/1.1.0
 INFO:absl:Reusing dataset trivia_qa (gs://caramel-spot-280923/data/trivia_qa/unfiltered.nocontext/1.1.0)
-INFO:absl:Constructing tf.data.Dataset for split train, from gs://caramel-spot-280923/data/trivia_qa/unfiltered.nocontext/1.1.0
+INFO:absl:Constructing tf.data.Dataset for split validation, from gs://caramel-spot-280923/data/trivia_qa/unfiltered.nocontext/1.1.0
 INFO:tensorflow:enable_2d_tiling: False
 INFO:tensorflow:num_cores_per_replica: 1
 INFO:tensorflow:computation_shape: [1, 1, 1]
@@ -89,10 +105,10 @@ INFO:tensorflow:device_assignment.core_assignment: [[[0 0 0]]
 
  [[1 1 1]]]
 WARNING:tensorflow:SimdMeshImpl ignoring devices ['', '', '', '', '', '', '', '']
-INFO:tensorflow:SimdMeshImpl init: Shape[model=8] LayoutRules{('batch', 'batch'), ('d_ff', 'model'), ('experts', 'batch'), ('heads', 'model'), ('vocab', 'model'), ('ensemble', 'ensemble')}
-INFO:tensorflow:Device Assignment: <tensorflow.python.tpu.device_assignment.DeviceAssignment object at 0x7f3224458ac8>
-INFO:tensorflow:serialize_num_microbatches: tokens_per_microbatch_per_replica=16384 batch_dim=Dimension(name='batch', size=16) sequence_length={'inputs': 128, 'targets': 32} batch_per_replica=16 num_microbatches=1
+INFO:tensorflow:SimdMeshImpl init: Shape[model=8] LayoutRules{('vocab', 'model'), ('experts', 'batch'), ('heads', 'model'), ('batch', 'batch'), ('ensemble', 'ensemble'), ('d_ff', 'model')}
+INFO:tensorflow:Device Assignment: <tensorflow.python.tpu.device_assignment.DeviceAssignment object at 0x7f73dc304b00>
 WARNING:tensorflow:Using default tf glorot_uniform_initializer for variable encoder/block_000/layer_000/SelfAttention/relative_attention_bias  The initialzer will guess the input and output dimensions  based on dimension order.
+WARNING:tensorflow:Using default tf glorot_uniform_initializer for variable decoder/block_000/layer_000/SelfAttention/relative_attention_bias  The initialzer will guess the input and output dimensions  based on dimension order.
 WARNING:tensorflow:Using default tf glorot_uniform_initializer for variable decoder/block_000/layer_000/SelfAttention/relative_attention_bias  The initialzer will guess the input and output dimensions  based on dimension order.
 INFO:tensorflow:Create pnum_tensor
 INFO:tensorflow:Variable decoder/block_000/layer_000/SelfAttention/k                  size 16777216     slice_size 2097152      Shape[d_model=1024, heads=16384]                            
@@ -608,1495 +624,535 @@ INFO:tensorflow:    decoder/block_004/layer_000/layer_norm/scale
 INFO:tensorflow:    decoder/block_004/layer_001/layer_norm/scale
 INFO:tensorflow:    decoder/block_004/layer_002/layer_norm/scale
 INFO:tensorflow:Trainable Variables            count: 388     Total size: 11307321344      Total slice_size: 1413524480     
-INFO:tensorflow:All Variables                  count: 419     Total size: 11318890880      Total slice_size: 1415424944     
+INFO:tensorflow:All Variables                  count: 388     Total size: 11307321344      Total slice_size: 1413524480     
 INFO:tensorflow:Counters:
-allreduce: 2.26e+09
- allreduce/[0]: 2.26e+09
-  allreduce/[0]/einsum_op: 2.26e+09
-  allreduce/[0]/reduce_op: 3.18e+06
-einsum: 4.45e+13
-einsum_unique: 4.45e+13
-output: 2.37e+11
- output/AddOperation: 1.04e+10
- output/BinaryOpWithBroadcasting: 4.18e+09
- output/BroadcastOperation: 2.22e+09
- output/Constant: 8
+allreduce: 8.23e+09
+ allreduce/[0]: 8.23e+09
+  allreduce/[0]/einsum_op: 8.23e+09
+  allreduce/[0]/reduce_op: 1.02e+03
+einsum: 9.61e+13
+einsum_unique: 9.6e+13
+output: 2.84e+11
+ output/AddOperation: 4.04e+10
+ output/BinaryOpWithBroadcasting: 2.16e+08
+ output/Constant: 6.44e+09
  output/EinsumOperation: 1.12e+11
- output/ImportOperation: 7.31e+04
- output/MinMaxOperation: 3.55e+06
- output/OneHotOperation: 2.06e+08
- output/RandomOperation: 8.07e+07
- output/RangeOperation: 1.28e+03
- output/ReduceOperation: 1.03e+09
- output/ReshapeOperation: 1.31e+10
- output/ScalarAddOperation: 1.13e+10
- output/ScalarMultiplyOperation: 1.34e+09
- output/ShiftOperation: 4.1e+03
- output/SlicewiseOperation: 6.82e+10
- output/StackOperation: 1.62e+07
- output/StackedVariable: 1.62e+07
- output/StopGradient: 1.07e+09
- output/UnstackOperation: 1.62e+07
+ output/ImportOperation: 8.33e+04
+ output/MinMaxOperation: 9.5e+06
+ output/OneHotOperation: 7.28e+08
+ output/RangeOperation: 2.05e+03
+ output/ReduceOperation: 1.59e+08
+ output/ReshapeOperation: 4.19e+10
+ output/ScalarAddOperation: 2.06e+07
+ output/ScalarMultiplyOperation: 3.03e+08
+ output/ShiftOperation: 6.55e+04
+ output/SlicewiseOperation: 5.4e+10
+ output/StackedVariable: 1.01e+06
+ output/StopGradient: 9.66e+09
+ output/UnstackOperation: 1.01e+06
  output/Variable: 1.13e+10
-output_unique: 2.15e+11
- output_unique/AddOperation: 5.86e+09
- output_unique/BinaryOpWithBroadcasting: 4.1e+09
- output_unique/BroadcastOperation: 1.23e+09
- output_unique/Constant: 1
- output_unique/EinsumOperation: 9.97e+10
- output_unique/ImportOperation: 9.14e+03
- output_unique/MinMaxOperation: 4.43e+05
- output_unique/OneHotOperation: 1.12e+08
- output_unique/RandomOperation: 6.65e+07
- output_unique/RangeOperation: 160
- output_unique/ReduceOperation: 9.67e+08
- output_unique/ReshapeOperation: 1.22e+10
- output_unique/ScalarAddOperation: 1.13e+10
- output_unique/ScalarMultiplyOperation: 2.54e+08
- output_unique/ShiftOperation: 512
- output_unique/SlicewiseOperation: 6.7e+10
- output_unique/StackOperation: 1.17e+07
- output_unique/StackedVariable: 1.17e+07
- output_unique/StopGradient: 1.07e+09
- output_unique/UnstackOperation: 1.17e+07
+ output/WhileLoopOperation: 6.44e+09
+output_unique: 2.41e+11
+ output_unique/AddOperation: 3.33e+10
+ output_unique/BinaryOpWithBroadcasting: 2.7e+07
+ output_unique/Constant: 6.44e+09
+ output_unique/EinsumOperation: 8.76e+10
+ output_unique/ImportOperation: 1.04e+04
+ output_unique/MinMaxOperation: 1.19e+06
+ output_unique/OneHotOperation: 5.52e+08
+ output_unique/RangeOperation: 256
+ output_unique/ReduceOperation: 1.52e+08
+ output_unique/ReshapeOperation: 3.91e+10
+ output_unique/ScalarAddOperation: 2.57e+06
+ output_unique/ScalarMultiplyOperation: 3.79e+07
+ output_unique/ShiftOperation: 8.19e+03
+ output_unique/SlicewiseOperation: 4.64e+10
+ output_unique/StackedVariable: 1.33e+05
+ output_unique/StopGradient: 9.66e+09
+ output_unique/UnstackOperation: 1.33e+05
  output_unique/Variable: 1.13e+10
+ output_unique/WhileLoopOperation: 6.44e+09
 variables: 1.13e+10
  variables/trainable: 1.13e+10
- variables/untrainable: 1.16e+07
-INFO:tensorflow:Initializing variables from gs://t5-data/pretrained_models/11B/model.ckpt-1000000:
-INFO:tensorflow:Variables in gs://t5-data/pretrained_models/11B/model.ckpt-1000000 but not in graph:
-INFO:tensorflow:
-INFO:tensorflow:Variables in graph but not in gs://t5-data/pretrained_models/11B/model.ckpt-1000000:
-INFO:tensorflow:
-INFO:tensorflow:Create CheckpointSaverHook.
 INFO:tensorflow:Done calling model_fn.
 INFO:tensorflow:TPU job name worker
-INFO:tensorflow:Starting the session.
 INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from gs://caramel-spot-280923/models-v3-8/11B/model.ckpt-1025000
 INFO:tensorflow:Running local_init_op.
 INFO:tensorflow:Done running local_init_op.
-WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py:767: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py:834: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
 Instructions for updating:
 Prefer Variable.assign which has equivalent behavior in 2.X.
-INFO:tensorflow:Initialized dataset iterators in 2 seconds
-INFO:tensorflow:Installing graceful shutdown hook.
-2020-06-22 15:18:27.674407: W tensorflow/core/distributed_runtime/rpc/grpc_session.cc:373] GrpcSession::ListDevices will initialize the session with an empty graph and other defaults because the session has not yet been created.
-INFO:tensorflow:Creating heartbeat manager for ['/job:worker/replica:0/task:0/device:CPU:0']
-INFO:tensorflow:Configuring worker heartbeat: shutdown_mode: WAIT_FOR_COORDINATOR
-
 INFO:tensorflow:Starting infeed thread controller.
 INFO:tensorflow:Starting outfeed thread controller.
+INFO:tensorflow:Initialized dataset iterators in 4 seconds
 INFO:tensorflow:Before copy master to slices.
 INFO:tensorflow:Done with copy master to slices.
-INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 1000000...
-INFO:tensorflow:Before Save.
-INFO:tensorflow:About to write a checkpoint
-INFO:tensorflow:Saving checkpoints for 1000000 into gs://caramel-spot-280923/models/11B/model.ckpt.
-INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 1000000...
-INFO:tensorflow:Done writing checkpoint.
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Outfeed finished for iteration (0, 0)
-INFO:tensorflow:loss = 0.003829956, step = 1000100
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (1, 28)
-INFO:tensorflow:loss = 0.003829956, step = 1000200 (48.768 sec)
-INFO:tensorflow:global_step/sec: 2.05056
-INFO:tensorflow:examples/sec: 32.8089
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (2, 91)
-INFO:tensorflow:loss = 0.0032653809, step = 1000300 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71175
-INFO:tensorflow:examples/sec: 43.388
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0035858154, step = 1000400 (38.929 sec)
-INFO:tensorflow:global_step/sec: 2.5687
-INFO:tensorflow:examples/sec: 41.0992
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (4, 49)
-INFO:tensorflow:loss = 0.0035095215, step = 1000500 (36.879 sec)
-INFO:tensorflow:global_step/sec: 2.71163
-INFO:tensorflow:examples/sec: 43.386
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.003036499, step = 1000600 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71181
-INFO:tensorflow:examples/sec: 43.3889
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (6, 12)
-INFO:tensorflow:loss = 0.0031738281, step = 1000700 (36.878 sec)
-INFO:tensorflow:global_step/sec: 2.71161
-INFO:tensorflow:examples/sec: 43.3857
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (7, 75)
-INFO:tensorflow:loss = 0.003250122, step = 1000800 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71171
-INFO:tensorflow:examples/sec: 43.3874
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0035095215, step = 1000900 (38.110 sec)
-INFO:tensorflow:global_step/sec: 2.62399
-INFO:tensorflow:examples/sec: 41.9838
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (9, 35)
-INFO:tensorflow:loss = 0.0029907227, step = 1001000 (36.881 sec)
-INFO:tensorflow:global_step/sec: 2.71141
-INFO:tensorflow:examples/sec: 43.3825
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (10, 98)
-INFO:tensorflow:loss = 0.003753662, step = 1001100 (36.881 sec)
-INFO:tensorflow:global_step/sec: 2.71145
-INFO:tensorflow:examples/sec: 43.3832
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0034484863, step = 1001200 (36.879 sec)
-INFO:tensorflow:global_step/sec: 2.71161
-INFO:tensorflow:examples/sec: 43.3857
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (12, 57)
-INFO:tensorflow:loss = 0.004119873, step = 1001300 (38.293 sec)
-INFO:tensorflow:global_step/sec: 2.6114
-INFO:tensorflow:examples/sec: 41.7824
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.00289917, step = 1001400 (36.879 sec)
-INFO:tensorflow:global_step/sec: 2.71158
-INFO:tensorflow:examples/sec: 43.3853
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (14, 20)
-INFO:tensorflow:loss = 0.0038146973, step = 1001500 (36.879 sec)
-INFO:tensorflow:global_step/sec: 2.71156
-INFO:tensorflow:examples/sec: 43.385
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (15, 83)
-INFO:tensorflow:loss = 0.003540039, step = 1001600 (38.737 sec)
-INFO:tensorflow:global_step/sec: 2.58151
-INFO:tensorflow:examples/sec: 41.3041
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0033111572, step = 1001700 (36.878 sec)
-INFO:tensorflow:global_step/sec: 2.71162
-INFO:tensorflow:examples/sec: 43.386
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (17, 41)
-INFO:tensorflow:loss = 0.0026245117, step = 1001800 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71171
-INFO:tensorflow:examples/sec: 43.3873
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0031433105, step = 1001900 (36.878 sec)
-INFO:tensorflow:global_step/sec: 2.71164
-INFO:tensorflow:examples/sec: 43.3863
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (19, 4)
-INFO:tensorflow:loss = 0.002243042, step = 1002000 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71175
-INFO:tensorflow:examples/sec: 43.388
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (20, 64)
-INFO:tensorflow:loss = 0.003112793, step = 1002100 (38.215 sec)
-INFO:tensorflow:global_step/sec: 2.61679
-INFO:tensorflow:examples/sec: 41.8686
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0031433105, step = 1002200 (36.879 sec)
-INFO:tensorflow:global_step/sec: 2.71156
-INFO:tensorflow:examples/sec: 43.385
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (22, 27)
-INFO:tensorflow:loss = 0.003250122, step = 1002300 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71172
-INFO:tensorflow:examples/sec: 43.3875
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (23, 90)
-INFO:tensorflow:loss = 0.0030670166, step = 1002400 (36.878 sec)
-INFO:tensorflow:global_step/sec: 2.71169
-INFO:tensorflow:examples/sec: 43.3871
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0029907227, step = 1002500 (38.181 sec)
-INFO:tensorflow:global_step/sec: 2.61908
-INFO:tensorflow:examples/sec: 41.9052
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (25, 50)
-INFO:tensorflow:loss = 0.0028533936, step = 1002600 (36.878 sec)
-INFO:tensorflow:global_step/sec: 2.71165
-INFO:tensorflow:examples/sec: 43.3864
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0032806396, step = 1002700 (36.878 sec)
-INFO:tensorflow:global_step/sec: 2.71164
-INFO:tensorflow:examples/sec: 43.3862
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (27, 13)
-INFO:tensorflow:loss = 0.0030670166, step = 1002800 (38.043 sec)
-INFO:tensorflow:global_step/sec: 2.62858
-INFO:tensorflow:examples/sec: 42.0572
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (28, 73)
-INFO:tensorflow:loss = 0.0026550293, step = 1002900 (36.879 sec)
-INFO:tensorflow:global_step/sec: 2.7116
-INFO:tensorflow:examples/sec: 43.3857
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.002609253, step = 1003000 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.7118
-INFO:tensorflow:examples/sec: 43.3887
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (30, 36)
-INFO:tensorflow:loss = 0.002609253, step = 1003100 (36.878 sec)
-INFO:tensorflow:global_step/sec: 2.71162
-INFO:tensorflow:examples/sec: 43.3859
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (31, 99)
-INFO:tensorflow:loss = 0.002380371, step = 1003200 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71179
-INFO:tensorflow:examples/sec: 43.3886
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0029907227, step = 1003300 (38.510 sec)
-INFO:tensorflow:global_step/sec: 2.5967
-INFO:tensorflow:examples/sec: 41.5472
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (33, 58)
-INFO:tensorflow:loss = 0.0024414062, step = 1003400 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71171
-INFO:tensorflow:examples/sec: 43.3873
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.002380371, step = 1003500 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71174
-INFO:tensorflow:examples/sec: 43.3879
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (35, 21)
-INFO:tensorflow:loss = 0.0029296875, step = 1003600 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71187
-INFO:tensorflow:examples/sec: 43.3899
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (36, 81)
-INFO:tensorflow:loss = 0.0027923584, step = 1003700 (38.001 sec)
-INFO:tensorflow:global_step/sec: 2.63148
-INFO:tensorflow:examples/sec: 42.1037
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.002532959, step = 1003800 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71172
-INFO:tensorflow:examples/sec: 43.3875
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (38, 44)
-INFO:tensorflow:loss = 0.0022125244, step = 1003900 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71174
-INFO:tensorflow:examples/sec: 43.3879
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.002532959, step = 1004000 (38.280 sec)
-INFO:tensorflow:global_step/sec: 2.61236
-INFO:tensorflow:examples/sec: 41.7978
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (40, 3)
-INFO:tensorflow:loss = 0.002532959, step = 1004100 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71174
-INFO:tensorflow:examples/sec: 43.3879
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (41, 66)
-INFO:tensorflow:loss = 0.0028839111, step = 1004200 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71176
-INFO:tensorflow:examples/sec: 43.3881
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0020446777, step = 1004300 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71177
-INFO:tensorflow:examples/sec: 43.3884
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (43, 29)
-INFO:tensorflow:loss = 0.003326416, step = 1004400 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.7117
-INFO:tensorflow:examples/sec: 43.3872
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (44, 87)
-INFO:tensorflow:loss = 0.0021514893, step = 1004500 (38.832 sec)
-INFO:tensorflow:global_step/sec: 2.57521
-INFO:tensorflow:examples/sec: 41.2033
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.002105713, step = 1004600 (36.878 sec)
-INFO:tensorflow:global_step/sec: 2.71168
-INFO:tensorflow:examples/sec: 43.3869
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (46, 50)
-INFO:tensorflow:loss = 0.0024414062, step = 1004700 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71176
-INFO:tensorflow:examples/sec: 43.3881
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0028076172, step = 1004800 (36.878 sec)
-INFO:tensorflow:global_step/sec: 2.71162
-INFO:tensorflow:examples/sec: 43.386
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (48, 10)
-INFO:tensorflow:loss = 0.0025024414, step = 1004900 (38.231 sec)
-INFO:tensorflow:global_step/sec: 2.61567
-INFO:tensorflow:examples/sec: 41.8508
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (49, 73)
-INFO:tensorflow:loss = 0.002105713, step = 1005000 (36.878 sec)
-INFO:tensorflow:global_step/sec: 2.71167
-INFO:tensorflow:examples/sec: 43.3867
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0021820068, step = 1005100 (36.878 sec)
-INFO:tensorflow:global_step/sec: 2.71158
-INFO:tensorflow:examples/sec: 43.3853
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (51, 36)
-INFO:tensorflow:loss = 0.0020141602, step = 1005200 (38.165 sec)
-INFO:tensorflow:global_step/sec: 2.62021
-INFO:tensorflow:examples/sec: 41.9234
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (52, 96)
-INFO:tensorflow:loss = 0.0020446777, step = 1005300 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71187
-INFO:tensorflow:examples/sec: 43.3899
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.002609253, step = 1005400 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71172
-INFO:tensorflow:examples/sec: 43.3876
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (54, 59)
-INFO:tensorflow:loss = 0.0024108887, step = 1005500 (36.878 sec)
-INFO:tensorflow:global_step/sec: 2.71168
-INFO:tensorflow:examples/sec: 43.3868
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0027770996, step = 1005600 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71182
-INFO:tensorflow:examples/sec: 43.3891
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (56, 18)
-INFO:tensorflow:loss = 0.002609253, step = 1005700 (38.459 sec)
-INFO:tensorflow:global_step/sec: 2.60024
-INFO:tensorflow:examples/sec: 41.6038
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (57, 81)
-INFO:tensorflow:loss = 0.0020599365, step = 1005800 (36.919 sec)
-INFO:tensorflow:global_step/sec: 2.70866
-INFO:tensorflow:examples/sec: 43.3386
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0020751953, step = 1005900 (36.874 sec)
-INFO:tensorflow:global_step/sec: 2.71192
-INFO:tensorflow:examples/sec: 43.3908
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (59, 44)
-INFO:tensorflow:loss = 0.0022125244, step = 1006000 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71187
-INFO:tensorflow:examples/sec: 43.3899
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0024719238, step = 1006100 (38.202 sec)
-INFO:tensorflow:global_step/sec: 2.61764
-INFO:tensorflow:examples/sec: 41.8823
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (61, 4)
-INFO:tensorflow:loss = 0.0021972656, step = 1006200 (36.879 sec)
-INFO:tensorflow:global_step/sec: 2.7116
-INFO:tensorflow:examples/sec: 43.3855
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (62, 67)
-INFO:tensorflow:loss = 0.0027618408, step = 1006300 (36.878 sec)
-INFO:tensorflow:global_step/sec: 2.71165
-INFO:tensorflow:examples/sec: 43.3863
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0020446777, step = 1006400 (38.301 sec)
-INFO:tensorflow:global_step/sec: 2.6109
-INFO:tensorflow:examples/sec: 41.7745
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (64, 26)
-INFO:tensorflow:loss = 0.0023040771, step = 1006500 (36.874 sec)
-INFO:tensorflow:global_step/sec: 2.71196
-INFO:tensorflow:examples/sec: 43.3913
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (65, 89)
-INFO:tensorflow:loss = 0.002319336, step = 1006600 (36.874 sec)
-INFO:tensorflow:global_step/sec: 2.71195
-INFO:tensorflow:examples/sec: 43.3912
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0017700195, step = 1006700 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71167
-INFO:tensorflow:examples/sec: 43.3867
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (67, 52)
-INFO:tensorflow:loss = 0.0019073486, step = 1006800 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71178
-INFO:tensorflow:examples/sec: 43.3884
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0020446777, step = 1006900 (38.470 sec)
-INFO:tensorflow:global_step/sec: 2.59952
-INFO:tensorflow:examples/sec: 41.5923
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (69, 11)
-INFO:tensorflow:loss = 0.0017547607, step = 1007000 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71171
-INFO:tensorflow:examples/sec: 43.3874
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (70, 74)
-INFO:tensorflow:loss = 0.0018081665, step = 1007100 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71181
-INFO:tensorflow:examples/sec: 43.3889
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.001953125, step = 1007200 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71179
-INFO:tensorflow:examples/sec: 43.3886
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (72, 34)
-INFO:tensorflow:loss = 0.001876831, step = 1007300 (38.180 sec)
-INFO:tensorflow:global_step/sec: 2.61917
-INFO:tensorflow:examples/sec: 41.9067
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (73, 97)
-INFO:tensorflow:loss = 0.0018539429, step = 1007400 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71183
-INFO:tensorflow:examples/sec: 43.3893
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0020141602, step = 1007500 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71185
-INFO:tensorflow:examples/sec: 43.3896
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (75, 60)
-INFO:tensorflow:loss = 0.001953125, step = 1007600 (38.162 sec)
-INFO:tensorflow:global_step/sec: 2.62044
-INFO:tensorflow:examples/sec: 41.927
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0015869141, step = 1007700 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.7118
-INFO:tensorflow:examples/sec: 43.3888
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (77, 20)
-INFO:tensorflow:loss = 0.0021514893, step = 1007800 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71187
-INFO:tensorflow:examples/sec: 43.39
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (78, 83)
-INFO:tensorflow:loss = 0.0019989014, step = 1007900 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71169
-INFO:tensorflow:examples/sec: 43.387
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0017852783, step = 1008000 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71177
-INFO:tensorflow:examples/sec: 43.3883
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (80, 43)
-INFO:tensorflow:loss = 0.0021514893, step = 1008100 (38.226 sec)
-INFO:tensorflow:global_step/sec: 2.61603
-INFO:tensorflow:examples/sec: 41.8564
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0014801025, step = 1008200 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71181
-INFO:tensorflow:examples/sec: 43.389
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (82, 6)
-INFO:tensorflow:loss = 0.0020751953, step = 1008300 (36.874 sec)
-INFO:tensorflow:global_step/sec: 2.7119
-INFO:tensorflow:examples/sec: 43.3904
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (83, 69)
-INFO:tensorflow:loss = 0.0019454956, step = 1008400 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71185
-INFO:tensorflow:examples/sec: 43.3896
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.001953125, step = 1008500 (38.099 sec)
-INFO:tensorflow:global_step/sec: 2.62471
-INFO:tensorflow:examples/sec: 41.9953
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (85, 29)
-INFO:tensorflow:loss = 0.0016326904, step = 1008600 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71188
-INFO:tensorflow:examples/sec: 43.3901
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (86, 92)
-INFO:tensorflow:loss = 0.0014190674, step = 1008700 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71186
-INFO:tensorflow:examples/sec: 43.3898
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0017547607, step = 1008800 (38.516 sec)
-INFO:tensorflow:global_step/sec: 2.59634
-INFO:tensorflow:examples/sec: 41.5414
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (88, 51)
-INFO:tensorflow:loss = 0.0015258789, step = 1008900 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71169
-INFO:tensorflow:examples/sec: 43.3871
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0015029907, step = 1009000 (36.878 sec)
-INFO:tensorflow:global_step/sec: 2.71164
-INFO:tensorflow:examples/sec: 43.3862
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (90, 14)
-INFO:tensorflow:loss = 0.0018920898, step = 1009100 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71173
-INFO:tensorflow:examples/sec: 43.3876
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (91, 77)
-INFO:tensorflow:loss = 0.0017166138, step = 1009200 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71186
-INFO:tensorflow:examples/sec: 43.3898
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0018997192, step = 1009300 (38.263 sec)
-INFO:tensorflow:global_step/sec: 2.61344
-INFO:tensorflow:examples/sec: 41.815
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (93, 36)
-INFO:tensorflow:loss = 0.002029419, step = 1009400 (36.879 sec)
-INFO:tensorflow:global_step/sec: 2.71163
-INFO:tensorflow:examples/sec: 43.3861
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (94, 99)
-INFO:tensorflow:loss = 0.0015106201, step = 1009500 (36.874 sec)
-INFO:tensorflow:global_step/sec: 2.71194
-INFO:tensorflow:examples/sec: 43.391
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.001953125, step = 1009600 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71182
-INFO:tensorflow:examples/sec: 43.3892
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (96, 60)
-INFO:tensorflow:loss = 0.0014419556, step = 1009700 (37.803 sec)
-INFO:tensorflow:global_step/sec: 2.64529
-INFO:tensorflow:examples/sec: 42.3246
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0016937256, step = 1009800 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71181
-INFO:tensorflow:examples/sec: 43.389
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (98, 23)
-INFO:tensorflow:loss = 0.0013656616, step = 1009900 (36.874 sec)
-INFO:tensorflow:global_step/sec: 2.71189
-INFO:tensorflow:examples/sec: 43.3903
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (99, 86)
-INFO:tensorflow:loss = 0.0016174316, step = 1010000 (38.085 sec)
-INFO:tensorflow:global_step/sec: 2.62569
-INFO:tensorflow:examples/sec: 42.0111
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0013427734, step = 1010100 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71186
-INFO:tensorflow:examples/sec: 43.3897
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (101, 46)
-INFO:tensorflow:loss = 0.0017166138, step = 1010200 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71183
-INFO:tensorflow:examples/sec: 43.3892
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0014572144, step = 1010300 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71171
-INFO:tensorflow:examples/sec: 43.3873
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (103, 9)
-INFO:tensorflow:loss = 0.0020446777, step = 1010400 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.7118
-INFO:tensorflow:examples/sec: 43.3888
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (104, 69)
-INFO:tensorflow:loss = 0.0014038086, step = 1010500 (37.936 sec)
-INFO:tensorflow:global_step/sec: 2.63601
-INFO:tensorflow:examples/sec: 42.1761
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0012969971, step = 1010600 (36.878 sec)
-INFO:tensorflow:global_step/sec: 2.71162
-INFO:tensorflow:examples/sec: 43.386
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (106, 32)
-INFO:tensorflow:loss = 0.0016784668, step = 1010700 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71187
-INFO:tensorflow:examples/sec: 43.3899
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (107, 95)
-INFO:tensorflow:loss = 0.0015792847, step = 1010800 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71177
-INFO:tensorflow:examples/sec: 43.3883
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0016021729, step = 1010900 (38.696 sec)
-INFO:tensorflow:global_step/sec: 2.5843
-INFO:tensorflow:examples/sec: 41.3487
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (109, 53)
-INFO:tensorflow:loss = 0.0017623901, step = 1011000 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71184
-INFO:tensorflow:examples/sec: 43.3894
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0014038086, step = 1011100 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71182
-INFO:tensorflow:examples/sec: 43.3891
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (111, 16)
-INFO:tensorflow:loss = 0.0014877319, step = 1011200 (38.469 sec)
-INFO:tensorflow:global_step/sec: 2.59952
-INFO:tensorflow:examples/sec: 41.5924
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (112, 75)
-INFO:tensorflow:loss = 0.001625061, step = 1011300 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71174
-INFO:tensorflow:examples/sec: 43.3879
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0016479492, step = 1011400 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71178
-INFO:tensorflow:examples/sec: 43.3885
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (114, 38)
-INFO:tensorflow:loss = 0.001449585, step = 1011500 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.7117
-INFO:tensorflow:examples/sec: 43.3873
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0014572144, step = 1011600 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71188
-INFO:tensorflow:examples/sec: 43.3901
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (116, 0)
-INFO:tensorflow:loss = 0.0019989014, step = 1011700 (38.047 sec)
-INFO:tensorflow:global_step/sec: 2.62829
-INFO:tensorflow:examples/sec: 42.0526
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (117, 63)
-INFO:tensorflow:loss = 0.001449585, step = 1011800 (36.879 sec)
-INFO:tensorflow:global_step/sec: 2.71155
-INFO:tensorflow:examples/sec: 43.3849
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0011291504, step = 1011900 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71176
-INFO:tensorflow:examples/sec: 43.3882
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (119, 26)
-INFO:tensorflow:loss = 0.0015106201, step = 1012000 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71181
-INFO:tensorflow:examples/sec: 43.389
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (120, 86)
-INFO:tensorflow:loss = 0.001373291, step = 1012100 (38.022 sec)
-INFO:tensorflow:global_step/sec: 2.63009
-INFO:tensorflow:examples/sec: 42.0815
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0014953613, step = 1012200 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71191
-INFO:tensorflow:examples/sec: 43.3905
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (122, 49)
-INFO:tensorflow:loss = 0.0017776489, step = 1012300 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71178
-INFO:tensorflow:examples/sec: 43.3885
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0017089844, step = 1012400 (38.027 sec)
-INFO:tensorflow:global_step/sec: 2.62966
-INFO:tensorflow:examples/sec: 42.0746
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (124, 9)
-INFO:tensorflow:loss = 0.001449585, step = 1012500 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71183
-INFO:tensorflow:examples/sec: 43.3893
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (125, 72)
-INFO:tensorflow:loss = 0.0011825562, step = 1012600 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71181
-INFO:tensorflow:examples/sec: 43.389
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0012207031, step = 1012700 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71173
-INFO:tensorflow:examples/sec: 43.3877
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (127, 35)
-INFO:tensorflow:loss = 0.0012435913, step = 1012800 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71178
-INFO:tensorflow:examples/sec: 43.3885
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (128, 94)
-INFO:tensorflow:loss = 0.0014801025, step = 1012900 (38.401 sec)
-INFO:tensorflow:global_step/sec: 2.60412
-INFO:tensorflow:examples/sec: 41.6659
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0011520386, step = 1013000 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71176
-INFO:tensorflow:examples/sec: 43.3882
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (130, 57)
-INFO:tensorflow:loss = 0.0012969971, step = 1013100 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71181
-INFO:tensorflow:examples/sec: 43.389
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0014801025, step = 1013200 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71189
-INFO:tensorflow:examples/sec: 43.3902
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (132, 17)
-INFO:tensorflow:loss = 0.0010681152, step = 1013300 (38.225 sec)
-INFO:tensorflow:global_step/sec: 2.61613
-INFO:tensorflow:examples/sec: 41.8581
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (133, 80)
-INFO:tensorflow:loss = 0.0018081665, step = 1013400 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71186
-INFO:tensorflow:examples/sec: 43.3897
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0015563965, step = 1013500 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71183
-INFO:tensorflow:examples/sec: 43.3893
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (135, 43)
-INFO:tensorflow:loss = 0.0014648438, step = 1013600 (38.042 sec)
-INFO:tensorflow:global_step/sec: 2.6287
-INFO:tensorflow:examples/sec: 42.0592
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0011901855, step = 1013700 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.7118
-INFO:tensorflow:examples/sec: 43.3888
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (137, 3)
-INFO:tensorflow:loss = 0.0013580322, step = 1013800 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71183
-INFO:tensorflow:examples/sec: 43.3892
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (138, 66)
-INFO:tensorflow:loss = 0.001159668, step = 1013900 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71178
-INFO:tensorflow:examples/sec: 43.3884
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0013198853, step = 1014000 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71184
-INFO:tensorflow:examples/sec: 43.3895
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (140, 26)
-INFO:tensorflow:loss = 0.0015792847, step = 1014100 (38.179 sec)
-INFO:tensorflow:global_step/sec: 2.61921
-INFO:tensorflow:examples/sec: 41.9074
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (141, 89)
-INFO:tensorflow:loss = 0.0016021729, step = 1014200 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71171
-INFO:tensorflow:examples/sec: 43.3874
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0011825562, step = 1014300 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71178
-INFO:tensorflow:examples/sec: 43.3884
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (143, 52)
-INFO:tensorflow:loss = 0.0013046265, step = 1014400 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71187
-INFO:tensorflow:examples/sec: 43.39
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0010299683, step = 1014500 (38.345 sec)
-INFO:tensorflow:global_step/sec: 2.60787
-INFO:tensorflow:examples/sec: 41.726
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (145, 11)
-INFO:tensorflow:loss = 0.0010757446, step = 1014600 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71177
-INFO:tensorflow:examples/sec: 43.3884
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (146, 74)
-INFO:tensorflow:loss = 0.0013961792, step = 1014700 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71183
-INFO:tensorflow:examples/sec: 43.3893
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.001121521, step = 1014800 (39.050 sec)
-INFO:tensorflow:global_step/sec: 2.56084
-INFO:tensorflow:examples/sec: 40.9735
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (148, 31)
-INFO:tensorflow:loss = 0.001121521, step = 1014900 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71175
-INFO:tensorflow:examples/sec: 43.3879
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (149, 94)
-INFO:tensorflow:loss = 0.001121521, step = 1015000 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71185
-INFO:tensorflow:examples/sec: 43.3896
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0012130737, step = 1015100 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71173
-INFO:tensorflow:examples/sec: 43.3877
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (151, 57)
-INFO:tensorflow:loss = 0.0009841919, step = 1015200 (36.874 sec)
-INFO:tensorflow:global_step/sec: 2.71189
-INFO:tensorflow:examples/sec: 43.3903
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0010986328, step = 1015300 (39.000 sec)
-INFO:tensorflow:global_step/sec: 2.56411
-INFO:tensorflow:examples/sec: 41.0257
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (153, 14)
-INFO:tensorflow:loss = 0.0011672974, step = 1015400 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71172
-INFO:tensorflow:examples/sec: 43.3875
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (154, 77)
-INFO:tensorflow:loss = 0.0011291504, step = 1015500 (36.874 sec)
-INFO:tensorflow:global_step/sec: 2.71189
-INFO:tensorflow:examples/sec: 43.3903
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0012664795, step = 1015600 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71179
-INFO:tensorflow:examples/sec: 43.3886
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (156, 37)
-INFO:tensorflow:loss = 0.0009689331, step = 1015700 (38.131 sec)
-INFO:tensorflow:global_step/sec: 2.62253
-INFO:tensorflow:examples/sec: 41.9605
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.001449585, step = 1015800 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71181
-INFO:tensorflow:examples/sec: 43.3889
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (158, 0)
-INFO:tensorflow:loss = 0.0011520386, step = 1015900 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71179
-INFO:tensorflow:examples/sec: 43.3887
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (159, 63)
-INFO:tensorflow:loss = 0.000869751, step = 1016000 (39.011 sec)
-INFO:tensorflow:global_step/sec: 2.56339
-INFO:tensorflow:examples/sec: 41.0142
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0011825562, step = 1016100 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71181
-INFO:tensorflow:examples/sec: 43.389
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (161, 20)
-INFO:tensorflow:loss = 0.0011672974, step = 1016200 (36.878 sec)
-INFO:tensorflow:global_step/sec: 2.71161
-INFO:tensorflow:examples/sec: 43.3858
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (162, 83)
-INFO:tensorflow:loss = 0.0011444092, step = 1016300 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71177
-INFO:tensorflow:examples/sec: 43.3883
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.00092315674, step = 1016400 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71186
-INFO:tensorflow:examples/sec: 43.3897
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (164, 43)
-INFO:tensorflow:loss = 0.0010299683, step = 1016500 (38.053 sec)
-INFO:tensorflow:global_step/sec: 2.62792
-INFO:tensorflow:examples/sec: 42.0468
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0009727478, step = 1016600 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71168
-INFO:tensorflow:examples/sec: 43.3869
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (166, 6)
-INFO:tensorflow:loss = 0.001159668, step = 1016700 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71184
-INFO:tensorflow:examples/sec: 43.3894
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (167, 69)
-INFO:tensorflow:loss = 0.0013198853, step = 1016800 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71179
-INFO:tensorflow:examples/sec: 43.3886
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0010986328, step = 1016900 (38.093 sec)
-INFO:tensorflow:global_step/sec: 2.6252
-INFO:tensorflow:examples/sec: 42.0032
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (169, 29)
-INFO:tensorflow:loss = 0.0011749268, step = 1017000 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71182
-INFO:tensorflow:examples/sec: 43.3891
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (170, 92)
-INFO:tensorflow:loss = 0.0011901855, step = 1017100 (36.878 sec)
-INFO:tensorflow:global_step/sec: 2.71165
-INFO:tensorflow:examples/sec: 43.3864
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0012588501, step = 1017200 (38.354 sec)
-INFO:tensorflow:global_step/sec: 2.6073
-INFO:tensorflow:examples/sec: 41.7168
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (172, 51)
-INFO:tensorflow:loss = 0.0009613037, step = 1017300 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71182
-INFO:tensorflow:examples/sec: 43.3891
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.001121521, step = 1017400 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71177
-INFO:tensorflow:examples/sec: 43.3883
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (174, 14)
-INFO:tensorflow:loss = 0.0010147095, step = 1017500 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71172
-INFO:tensorflow:examples/sec: 43.3876
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (175, 77)
-INFO:tensorflow:loss = 0.00079345703, step = 1017600 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71186
-INFO:tensorflow:examples/sec: 43.3898
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0009460449, step = 1017700 (38.169 sec)
-INFO:tensorflow:global_step/sec: 2.61992
-INFO:tensorflow:examples/sec: 41.9187
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (177, 37)
-INFO:tensorflow:loss = 0.00076293945, step = 1017800 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71178
-INFO:tensorflow:examples/sec: 43.3885
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0010223389, step = 1017900 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71173
-INFO:tensorflow:examples/sec: 43.3877
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (179, 0)
-INFO:tensorflow:loss = 0.0009384155, step = 1018000 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71188
-INFO:tensorflow:examples/sec: 43.3901
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (180, 59)
-INFO:tensorflow:loss = 0.0009498596, step = 1018100 (38.263 sec)
-INFO:tensorflow:global_step/sec: 2.6135
-INFO:tensorflow:examples/sec: 41.816
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0008010864, step = 1018200 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71186
-INFO:tensorflow:examples/sec: 43.3898
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (182, 22)
-INFO:tensorflow:loss = 0.0008125305, step = 1018300 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71182
-INFO:tensorflow:examples/sec: 43.3892
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (183, 85)
-INFO:tensorflow:loss = 0.0011749268, step = 1018400 (38.689 sec)
-INFO:tensorflow:global_step/sec: 2.5847
-INFO:tensorflow:examples/sec: 41.3552
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.001159668, step = 1018500 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71184
-INFO:tensorflow:examples/sec: 43.3894
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (185, 43)
-INFO:tensorflow:loss = 0.0012359619, step = 1018600 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71187
-INFO:tensorflow:examples/sec: 43.3899
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0010528564, step = 1018700 (36.879 sec)
-INFO:tensorflow:global_step/sec: 2.71158
-INFO:tensorflow:examples/sec: 43.3853
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (187, 6)
-INFO:tensorflow:loss = 0.0012054443, step = 1018800 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.7118
-INFO:tensorflow:examples/sec: 43.3889
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (188, 66)
-INFO:tensorflow:loss = 0.0008277893, step = 1018900 (38.178 sec)
-INFO:tensorflow:global_step/sec: 2.61929
-INFO:tensorflow:examples/sec: 41.9086
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0010299683, step = 1019000 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.7118
-INFO:tensorflow:examples/sec: 43.3888
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (190, 29)
-INFO:tensorflow:loss = 0.0009536743, step = 1019100 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71181
-INFO:tensorflow:examples/sec: 43.389
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (191, 92)
-INFO:tensorflow:loss = 0.00077056885, step = 1019200 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71187
-INFO:tensorflow:examples/sec: 43.3899
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0008010864, step = 1019300 (38.018 sec)
-INFO:tensorflow:global_step/sec: 2.63035
-INFO:tensorflow:examples/sec: 42.0856
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (193, 52)
-INFO:tensorflow:loss = 0.00078201294, step = 1019400 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71168
-INFO:tensorflow:examples/sec: 43.3869
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.00093078613, step = 1019500 (36.879 sec)
-INFO:tensorflow:global_step/sec: 2.71156
-INFO:tensorflow:examples/sec: 43.385
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (195, 15)
-INFO:tensorflow:loss = 0.0010528564, step = 1019600 (38.780 sec)
-INFO:tensorflow:global_step/sec: 2.57857
-INFO:tensorflow:examples/sec: 41.2571
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (196, 73)
-INFO:tensorflow:loss = 0.0010223389, step = 1019700 (36.878 sec)
-INFO:tensorflow:global_step/sec: 2.71175
-INFO:tensorflow:examples/sec: 43.3881
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.00079345703, step = 1019800 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71165
-INFO:tensorflow:examples/sec: 43.3865
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (198, 36)
-INFO:tensorflow:loss = 0.00062561035, step = 1019900 (36.879 sec)
-INFO:tensorflow:global_step/sec: 2.71161
-INFO:tensorflow:examples/sec: 43.3857
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (199, 99)
-INFO:tensorflow:loss = 0.0009918213, step = 1020000 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71187
-INFO:tensorflow:examples/sec: 43.3899
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0008468628, step = 1020100 (37.937 sec)
-INFO:tensorflow:global_step/sec: 2.63589
-INFO:tensorflow:examples/sec: 42.1742
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (201, 59)
-INFO:tensorflow:loss = 0.00077819824, step = 1020200 (36.878 sec)
-INFO:tensorflow:global_step/sec: 2.71163
-INFO:tensorflow:examples/sec: 43.3861
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.00076675415, step = 1020300 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71169
-INFO:tensorflow:examples/sec: 43.387
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (203, 22)
-INFO:tensorflow:loss = 0.00062942505, step = 1020400 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71176
-INFO:tensorflow:examples/sec: 43.3882
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (204, 80)
-INFO:tensorflow:loss = 0.00088119507, step = 1020500 (38.751 sec)
-INFO:tensorflow:global_step/sec: 2.58056
-INFO:tensorflow:examples/sec: 41.2889
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0009727478, step = 1020600 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71187
-INFO:tensorflow:examples/sec: 43.39
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (206, 43)
-INFO:tensorflow:loss = 0.00074386597, step = 1020700 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71177
-INFO:tensorflow:examples/sec: 43.3883
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0008621216, step = 1020800 (37.916 sec)
-INFO:tensorflow:global_step/sec: 2.63741
-INFO:tensorflow:examples/sec: 42.1986
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (208, 3)
-INFO:tensorflow:loss = 0.00088500977, step = 1020900 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71179
-INFO:tensorflow:examples/sec: 43.3887
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (209, 66)
-INFO:tensorflow:loss = 0.00088882446, step = 1021000 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71177
-INFO:tensorflow:examples/sec: 43.3882
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0008583069, step = 1021100 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.7117
-INFO:tensorflow:examples/sec: 43.3872
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (211, 29)
-INFO:tensorflow:loss = 0.0006713867, step = 1021200 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71184
-INFO:tensorflow:examples/sec: 43.3895
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (212, 89)
-INFO:tensorflow:loss = 0.0008468628, step = 1021300 (38.147 sec)
-INFO:tensorflow:global_step/sec: 2.62145
-INFO:tensorflow:examples/sec: 41.9432
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.00078201294, step = 1021400 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71171
-INFO:tensorflow:examples/sec: 43.3874
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (214, 52)
-INFO:tensorflow:loss = 0.0008087158, step = 1021500 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71171
-INFO:tensorflow:examples/sec: 43.3874
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0009460449, step = 1021600 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71173
-INFO:tensorflow:examples/sec: 43.3876
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (216, 12)
-INFO:tensorflow:loss = 0.0008621216, step = 1021700 (37.981 sec)
-INFO:tensorflow:global_step/sec: 2.63295
-INFO:tensorflow:examples/sec: 42.1272
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (217, 75)
-INFO:tensorflow:loss = 0.00061798096, step = 1021800 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.7117
-INFO:tensorflow:examples/sec: 43.3872
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0010528564, step = 1021900 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.7119
-INFO:tensorflow:examples/sec: 43.3904
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (219, 38)
-INFO:tensorflow:loss = 0.00060272217, step = 1022000 (38.522 sec)
-INFO:tensorflow:global_step/sec: 2.59588
-INFO:tensorflow:examples/sec: 41.5341
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (220, 97)
-INFO:tensorflow:loss = 0.0009460449, step = 1022100 (36.878 sec)
-INFO:tensorflow:global_step/sec: 2.71167
-INFO:tensorflow:examples/sec: 43.3867
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.00076293945, step = 1022200 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71178
-INFO:tensorflow:examples/sec: 43.3885
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (222, 60)
-INFO:tensorflow:loss = 0.0007286072, step = 1022300 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71178
-INFO:tensorflow:examples/sec: 43.3884
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0008659363, step = 1022400 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71175
-INFO:tensorflow:examples/sec: 43.3879
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (224, 20)
-INFO:tensorflow:loss = 0.0006713867, step = 1022500 (38.173 sec)
-INFO:tensorflow:global_step/sec: 2.61969
-INFO:tensorflow:examples/sec: 41.915
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (225, 83)
-INFO:tensorflow:loss = 0.00062179565, step = 1022600 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.7117
-INFO:tensorflow:examples/sec: 43.3872
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0007133484, step = 1022700 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71184
-INFO:tensorflow:examples/sec: 43.3894
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (227, 46)
-INFO:tensorflow:loss = 0.00063323975, step = 1022800 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71177
-INFO:tensorflow:examples/sec: 43.3883
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.00076675415, step = 1022900 (37.969 sec)
-INFO:tensorflow:global_step/sec: 2.63377
-INFO:tensorflow:examples/sec: 42.1403
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (229, 6)
-INFO:tensorflow:loss = 0.000831604, step = 1023000 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71183
-INFO:tensorflow:examples/sec: 43.3893
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (230, 69)
-INFO:tensorflow:loss = 0.00065612793, step = 1023100 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71179
-INFO:tensorflow:examples/sec: 43.3886
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.00092697144, step = 1023200 (38.426 sec)
-INFO:tensorflow:global_step/sec: 2.60238
-INFO:tensorflow:examples/sec: 41.6381
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (232, 28)
-INFO:tensorflow:loss = 0.0007286072, step = 1023300 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71188
-INFO:tensorflow:examples/sec: 43.3901
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (233, 91)
-INFO:tensorflow:loss = 0.0006752014, step = 1023400 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71179
-INFO:tensorflow:examples/sec: 43.3886
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.00076293945, step = 1023500 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71179
-INFO:tensorflow:examples/sec: 43.3886
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (235, 54)
-INFO:tensorflow:loss = 0.0008392334, step = 1023600 (36.874 sec)
-INFO:tensorflow:global_step/sec: 2.71192
-INFO:tensorflow:examples/sec: 43.3907
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0007247925, step = 1023700 (38.094 sec)
-INFO:tensorflow:global_step/sec: 2.62508
-INFO:tensorflow:examples/sec: 42.0013
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (237, 14)
-INFO:tensorflow:loss = 0.00074005127, step = 1023800 (36.878 sec)
-INFO:tensorflow:global_step/sec: 2.71159
-INFO:tensorflow:examples/sec: 43.3855
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (238, 77)
-INFO:tensorflow:loss = 0.0005912781, step = 1023900 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71179
-INFO:tensorflow:examples/sec: 43.3886
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0006866455, step = 1024000 (36.875 sec)
-INFO:tensorflow:global_step/sec: 2.71187
-INFO:tensorflow:examples/sec: 43.3899
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (240, 36)
-INFO:tensorflow:loss = 0.0008468628, step = 1024100 (38.469 sec)
-INFO:tensorflow:global_step/sec: 2.59948
-INFO:tensorflow:examples/sec: 41.5916
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (241, 99)
-INFO:tensorflow:loss = 0.000541687, step = 1024200 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71174
-INFO:tensorflow:examples/sec: 43.3878
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.00041770935, step = 1024300 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71173
-INFO:tensorflow:examples/sec: 43.3877
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (243, 62)
-INFO:tensorflow:loss = 0.0005912781, step = 1024400 (38.349 sec)
-INFO:tensorflow:global_step/sec: 2.60763
-INFO:tensorflow:examples/sec: 41.7221
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.00064468384, step = 1024500 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.7118
-INFO:tensorflow:examples/sec: 43.3887
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (245, 21)
-INFO:tensorflow:loss = 0.00061035156, step = 1024600 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71177
-INFO:tensorflow:examples/sec: 43.3884
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (246, 84)
-INFO:tensorflow:loss = 0.00060653687, step = 1024700 (36.877 sec)
-INFO:tensorflow:global_step/sec: 2.71179
-INFO:tensorflow:examples/sec: 43.3886
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.0006904602, step = 1024800 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71179
-INFO:tensorflow:examples/sec: 43.3887
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (248, 44)
-INFO:tensorflow:loss = 0.0006790161, step = 1024900 (37.997 sec)
-INFO:tensorflow:global_step/sec: 2.63175
-INFO:tensorflow:examples/sec: 42.108
-INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
-INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
-INFO:tensorflow:loss = 0.00061798096, step = 1025000 (36.876 sec)
-INFO:tensorflow:global_step/sec: 2.71175
-INFO:tensorflow:examples/sec: 43.3881
+INFO:tensorflow:decoded 0: trivia question: what do the 3 dots mean in math?
+INFO:tensorflow:            -> the decimal point
+INFO:tensorflow:decoded 1: trivia question: who is playing the halftime show at super bowl 2016?
+INFO:tensorflow:            -> the who
+INFO:tensorflow:decoded 2: trivia question: who won the 2017 sports personality of the year?
+INFO:tensorflow:            -> mo farah
+INFO:tensorflow:decoded 4: trivia question: who has made the most premier league appearances?
+INFO:tensorflow:            -> gareth barry
+INFO:tensorflow:decoded 8: trivia question: when was the first hunger games book published?
+INFO:tensorflow:            -> march 21, 2005
+INFO:tensorflow:decoded 16: trivia question: who plays emma in air bud world pup?
+INFO:tensorflow:            -> joey king
+INFO:tensorflow:decoded 32: trivia question: who scored the most points in their nba career?
+INFO:tensorflow:            -> kareem abdul-jabbar
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:decoded 64: trivia question: who gave the famous objective co relative theory?
+INFO:tensorflow:            -> karl marx
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:decoded 128: trivia question: who acts as the chairman of the election commission?
+INFO:tensorflow:            -> om prakash rawat
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:decoded 256: trivia question: who is the longest serving member of the house in history?
+INFO:tensorflow:            -> john dingell
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:decoded 512: trivia question: how tall is the actor who plays hagrid in harry potter?
+INFO:tensorflow:            -> 5 ft 11 in (1.75 m)
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:decoded 1024: trivia question: what is it called when you believe in greek gods?
+INFO:tensorflow:            -> polytheism
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (20, 0)
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:decoded 2048: trivia question: when did marathon change its name to snickers?
+INFO:tensorflow:            -> 1971
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:decoded 4096: trivia question: which famous huntsman who was known for wearing a grey coat was buried in caldbeck cemetery
+INFO:tensorflow:            -> sammy davis jnr
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (73, 0)
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:decoded 8192: trivia question: who was the american president when the berlin wall was constructed?
+INFO:tensorflow:            -> harry s. truman
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (134, 0)
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (197, 0)
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Stop infeed thread controller
 INFO:tensorflow:Shutting down InfeedController thread.
 INFO:tensorflow:InfeedController received shutdown signal, stopping.
@@ -2108,18 +1164,10 @@ INFO:tensorflow:OutfeedController received shutdown signal, stopping.
 INFO:tensorflow:Outfeed thread finished, shutting down.
 INFO:tensorflow:outfeed marked as finished
 INFO:tensorflow:Shutdown TPU system.
-INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 1025000...
-INFO:tensorflow:Before Save.
-INFO:tensorflow:About to write a checkpoint
-INFO:tensorflow:Saving checkpoints for 1025000 into gs://caramel-spot-280923/models/11B/model.ckpt.
-WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/training/saver.py:971: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
-Instructions for updating:
-Use standard file APIs to delete files with this prefix.
-INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 1025000...
-INFO:tensorflow:Done writing checkpoint.
-INFO:tensorflow:Done with the session.
-INFO:tensorflow:Loss for final step: 0.00061798096.
-INFO:tensorflow:training_loop marked as finished
+INFO:tensorflow:prediction_loop marked as finished
+INFO:tensorflow:prediction_loop marked as finished
+INFO:tensorflow:eval/nq_context_free/accuracy at step 1025000: 21.129
+INFO:tensorflow:eval/triviaqa_context_free/accuracy at step 1025000: 33.316
 Setting up GCS access...
 Running on TPU: grpc://10.240.1.2:8470
 A few raw validation examples...
@@ -2129,33 +1177,31 @@ A few raw validation examples...
 {'question': b'where was the world economic forum held this year?', 'answer': b'Davos, a mountain resort in Graub\xc3\xbcnden, in the eastern Alps region of Switzerland'}
 {'question': b'who has made the most premier league appearances?', 'answer': b'Gareth Barry'}
 A few preprocessed validation examples...
-{'inputs_plaintext': b'trivia question: what material was used to build the roofs of houses in burzahom?', 'inputs': array([22377,   822,    10,   125,  1037,    47,   261,    12,   918,
-           8,  2955,     7,    13,  4790,    16,  7018,  1629, 10207,
-          58,     1]), 'targets_plaintext': b'birch', 'targets': array([   3, 8781,  524,    1])}
-{'inputs_plaintext': b'trivia question: who sang what i like about you originally?', 'inputs': array([22377,   822,    10,   113,  9965,   125,     3,    23,   114,
-          81,    25,  5330,    58,     1]), 'targets_plaintext': b'american rock band the romantics', 'targets': array([10211,  2480,  1928,     8,  7966,     7,     1])}
-{'inputs_plaintext': b'trivia question: when was the time the eagles won the superbowl?', 'inputs': array([22377,   822,    10,   116,    47,     8,    97,     8,     3,
-          15,     9,  3537,     7,   751,     8,  7857,  2381,    40,
-          58,     1]), 'targets_plaintext': b'2017', 'targets': array([1233,    1])}
-{'inputs_plaintext': b'trivia question: where is gall bladder situated in human body?', 'inputs': array([22377,   822,    10,   213,    19, 12486, 26673,  8382,    16,
-         936,   643,    58,     1]), 'targets_plaintext': b'beneath the liver', 'targets': array([12759,     8, 11501,     1])}
-{'inputs_plaintext': b'trivia question: what is nginx and what is it used for?', 'inputs': array([22377,   822,    10,   125,    19,     3,  1725,    77,   226,
-          11,   125,    19,    34,   261,    21,    58,     1]), 'targets_plaintext': b'a web server which can also be used as a reverse proxy, load balancer and http cache', 'targets': array([    3,     9,   765,  2460,    84,    54,    92,    36,   261,
-          38,     3,     9,  7211, 19784,     6,  4002,  2109,    52,
-          11,  2649, 11800,     1])}
+{'inputs_plaintext': b'trivia question: what type of novel is goodbye mr chips?', 'inputs': array([22377,   822,    10,   125,   686,    13,  3714,    19, 23281,
+           3,    51,    52,  8852,    58,     1]), 'targets_plaintext': b'psychological fiction', 'targets': array([11041,  8973,     1])}
+{'inputs_plaintext': b'trivia question: how old was sasuke when his clan died?', 'inputs': array([22377,   822,    10,   149,   625,    47,     3,     7,     9,
+           7,  1598,    15,   116,   112, 18297,  3977,    58,     1]), 'targets_plaintext': b'seven', 'targets': array([2391,    1])}
+{'inputs_plaintext': b'trivia question: who played truman capote in in cold blood?', 'inputs': array([22377,   822,    10,   113,  1944,     3,  2666,   348,   212,
+        3013,    15,    16,    16,  2107,  1717,    58,     1]), 'targets_plaintext': b'philip seymour hoffman', 'targets': array([    3, 11692,  7446,   142,    63,    51,  1211,     3, 11950,
+         348,     1])}
+{'inputs_plaintext': b'trivia question: who does luke skywalker fall in love with?', 'inputs': array([22377,   822,    10,   113,   405,     3,    40,  1598,    15,
+        5796, 24063,  1590,    16,   333,    28,    58,     1]), 'targets_plaintext': b'mara jade', 'targets': array([3157,    9, 2662,  221,    1])}
+{'inputs_plaintext': b'trivia question: where does safe haven take place in the book?', 'inputs': array([22377,   822,    10,   213,   405,  1346,    43,    29,   240,
+         286,    16,     8,   484,    58,     1]), 'targets_plaintext': b'southport, north carolina', 'targets': array([ 3414,  1493,     6,  3457,   443, 12057,     9,     1])}
 A few raw validation examples...
 {'answer': {'aliases': array([b'Torquemada (disambiguation)', b'Torquemada'], dtype=object), 'matched_wiki_entity_name': b'', 'normalized_aliases': array([b'torquemada', b'torquemada disambiguation'], dtype=object), 'normalized_matched_wiki_entity_name': b'', 'normalized_value': b'torquemada', 'type': b'WikipediaEntity', 'value': b'Torquemada'}, 'entity_pages': {'doc_source': array([], dtype=object), 'filename': array([], dtype=object), 'title': array([], dtype=object), 'wiki_context': array([], dtype=object)}, 'question': b'In 1483, who was appointed the first grand inquisitor of the Spanish Inquisition?', 'question_id': b'qw_16011', 'question_source': b'http://www.quizwise.com/', 'search_results': {'description': array([], dtype=object), 'filename': array([], dtype=object), 'rank': array([], dtype=int32), 'search_context': array([], dtype=object), 'title': array([], dtype=object), 'url': array([], dtype=object)}}
 {'answer': {'aliases': array([b'Austerlitz (disambiguation)', b'Austerlitz', b'AUSTERLITZ'],
       dtype=object), 'matched_wiki_entity_name': b'', 'normalized_aliases': array([b'austerlitz', b'austerlitz disambiguation'], dtype=object), 'normalized_matched_wiki_entity_name': b'', 'normalized_value': b'austerlitz', 'type': b'WikipediaEntity', 'value': b'AUSTERLITZ'}, 'entity_pages': {'doc_source': array([], dtype=object), 'filename': array([], dtype=object), 'title': array([], dtype=object), 'wiki_context': array([], dtype=object)}, 'question': b'Which celebrated battle was fought near Brno on 2nd December 1805?', 'question_id': b'dpql_4053', 'question_source': b'https://derbyshirepubquizleague.wordpress.com/', 'search_results': {'description': array([], dtype=object), 'filename': array([], dtype=object), 'rank': array([], dtype=int32), 'search_context': array([], dtype=object), 'title': array([], dtype=object), 'url': array([], dtype=object)}}
 A few preprocessed validation examples...
-{'inputs_plaintext': b'trivia question: according to the rankin-bass tv classic of the same name, who brought frosty the snowman back to life?', 'inputs': array([22377,   822,    10,  1315,    12,     8, 11003,    77,    18,
-        4883,     7,     3,    17,   208,  2431,    13,     8,   337,
-         564,     6,   113,  1940,  2515,  3481,    63,     8,  2983,
-         348,   223,    12,   280,    58,     1]), 'targets_plaintext': b'santa claus', 'targets': array([   3,    7,  288,    9,    3, 4651,  302,    1])}
-{'inputs_plaintext': b"trivia question: who is the protagonist and narrator of robert louis stevensons novels 'kidnapped' and 'catriona?", 'inputs': array([22377,   822,    10,   113,    19,     8, 21326,    11,     3,
-          29,   291,    52,  1016,    13,     3,  5840,    49,    17,
-       16585,   159,     3,   849,  1926,  6577, 16438,     3,    31,
-        2168,    26,    29,  3096,    15,    26,    31,    11,     3,
-          31,  2138, 16310,     9,    58,     1]), 'targets_plaintext': b'david balfour', 'targets': array([  836,  6961,  6561, 12521,     1])}
-{'inputs_plaintext': b'trivia question: who is the current australian prime minister ?', 'inputs': array([22377,   822,    10,   113,    19,     8,   750, 23407,    29,
-        3427,  6323,     3,    58,     1]), 'targets_plaintext': b'julia gillard', 'targets': array([    3,   354,    83,    23,     9,     3,   122, 23854,     1])}
+{'inputs_plaintext': b'trivia question: which preparation still in use today, was known in 4th century egypt? then, it was made from salt, pepper, iris flowers and mint leaves, but now mostly comprises sodium fluoride.', 'inputs': array([22377,   822,    10,    84,  4537,   341,    16,   169,   469,
+           6,    47,   801,    16,   314,   189,  2646,     3,    15,
+         122,    63,   102,    17,    58,   258,     6,    34,    47,
+         263,    45,  3136,     6,  5270,     6,     3, 24804,  3652,
+          11, 13983,  3231,     6,    68,   230,  3323, 13009, 19049,
+        6720,   127,  1599,     5,     1]), 'targets_plaintext': b'toothpaste', 'targets': array([31916,     1])}
+{'inputs_plaintext': b'trivia question: which wedding anniversary is celebrated with paper', 'inputs': array([22377,   822,    10,    84,  1683,  7685,    19,  9443,    28,
+        1040,     1]), 'targets_plaintext': b'1st', 'targets': array([209,   7,  17,   1])}
+{'inputs_plaintext': b'trivia question: which lancashire football club plays home games at the globe arena, moving from christie park in 2010?', 'inputs': array([22377,   822,    10,    84,     3,  1618,   658,  5718,  3370,
+        1886,  4805,   234,  1031,    44,     8,  7895, 15134,     6,
+        1735,    45,     3, 15294,    23,    15,  2447,    16,  2735,
+          58,     1]), 'targets_plaintext': b'morecambe', 'targets': array([  72, 6527,  346,    1])}
