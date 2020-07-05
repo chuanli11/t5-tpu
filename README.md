@@ -35,6 +35,15 @@ python3 finetune_t5_cbqa.py
 #### Bug Fix
 
 ```
+# ValueError: Configurable 'DenseReluDense' doesn't have a parameter named 'use_bias'.
+pip3 install mesh-tensorflow==0.1.16
+
+# AssertionError: 'triviaqa_context_free' does not exist in any of the task cache directories
+vim /home/ubuntu/.local/lib/python3.7/site-packages/t5/data/utils.py
+
+# Add this line to line 674
+use_cached=False 
+
 # Some operative_config.gin file have use_custom_ops set to True. This cause "tensor2tensor.data_generators.ops.pack_sequences_ops not found error"
 
 vim /home/ubuntu/.local/lib/python3.7/site-packages/mesh_tensorflow/transformer/dataset.py
