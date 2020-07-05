@@ -1,8 +1,8 @@
-python3 finetune_t5_cbqa.py --model_size small \
-	--finetune_steps 2000 \
+python3 finetune_t5_cbqa.py --model_size t5.1.1.small_ssm \
+	--finetune_steps 1000 \
 	--save_per_steps 1000 \
 	--base_dir gs://caramel-spot-280923 \
-	--tpu_type v3-8 2>&1 | tee log_small-v3-8.txt
+	--tpu_type v2-8 2>&1 | tee log_small-v2-8_t5.1.1.small_ssm.txt
 
 #python3 finetune_t5_cbqa.py --model_size base \
 #	--finetune_steps 1000 \

@@ -241,7 +241,8 @@ def main():
     
     
     # Public GCS path for T5 pre-trained model checkpoints
-    BASE_PRETRAINED_DIR = "gs://t5-data/pretrained_models"
+    #BASE_PRETRAINED_DIR = "gs://t5-data/pretrained_models"
+    BASE_PRETRAINED_DIR = "gs://t5-data/pretrained_models/cbqa"
     PRETRAINED_DIR = os.path.join(BASE_PRETRAINED_DIR, MODEL_SIZE)
     MODEL_DIR = os.path.join(MODELS_DIR, MODEL_SIZE)
     
@@ -258,6 +259,9 @@ def main():
     # Limit number of checkpoints to fit within 5GB (if possible).
     model_parallelism, train_batch_size, keep_checkpoint_max = {
             "small": (1, 256, 16),
+            "t5.1.1.small": (1, 256, 16),
+            "t5.1.1.small_ssm": (1, 256, 16),
+            "t5.1.1.small_ssm_nq": (1, 256, 16),
             "base": (2, 128, 8),
             "large": (8, 64, 4),
             "3B": (8, 16, 1),

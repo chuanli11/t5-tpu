@@ -1,6 +1,5 @@
 # t5-tpu
 
-
 ```
 # Set up Google Cloud Storage Bucket
 export PROJECT_ID=caramel-spot-280923
@@ -30,4 +29,16 @@ git clone https://github.com/chuanli11/t5-tpu.git
 cd t5-tpu
 
 python3 finetune_t5_cbqa.py
+```
+
+
+#### Bug Fix
+
+```
+# Some operative_config.gin file have use_custom_ops set to True. This cause "tensor2tensor.data_generators.ops.pack_sequences_ops not found error"
+
+vim /home/ubuntu/.local/lib/python3.7/site-packages/mesh_tensorflow/transformer/dataset.py
+
+# Add this to line 522
+use_custom_ops=False
 ```
