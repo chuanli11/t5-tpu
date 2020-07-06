@@ -259,12 +259,12 @@ def main():
     # Limit number of checkpoints to fit within 5GB (if possible).
     model_parallelism, train_batch_size, keep_checkpoint_max = {
             "small": (1, 256, 16),
-            "t5.1.1.small": (1, 256, 16),
             "t5.1.1.small_ssm": (1, 256, 16),
-            "t5.1.1.small_ssm_nq": (1, 256, 16),
             "base": (2, 128, 8),
             "large": (8, 64, 4),
+            "t5.1.1.xl_ssm": (8, 16, 1),
             "3B": (8, 16, 1),
+            "t5.1.1.xxl_ssm": (8, 16, 1),
             "11B": (8, 16, 1)}[MODEL_SIZE]
     
     tf.io.gfile.makedirs(MODEL_DIR)
