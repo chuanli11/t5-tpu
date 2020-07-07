@@ -1022,3 +1022,1489 @@ INFO:tensorflow:global_step/sec: 6.76889
 INFO:tensorflow:examples/sec: 108.302
 INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0024108887, step = 1105300 (14.773 sec)
+INFO:tensorflow:global_step/sec: 6.7689
+INFO:tensorflow:examples/sec: 108.302
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0026397705, step = 1105400 (16.071 sec)
+INFO:tensorflow:global_step/sec: 6.22224
+INFO:tensorflow:examples/sec: 99.5558
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0018539429, step = 1105500 (14.774 sec)
+INFO:tensorflow:global_step/sec: 6.76871
+INFO:tensorflow:examples/sec: 108.299
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (55, 22)
+INFO:tensorflow:loss = 0.0029144287, step = 1105600 (14.773 sec)
+INFO:tensorflow:global_step/sec: 6.76888
+INFO:tensorflow:examples/sec: 108.302
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0021972656, step = 1105700 (14.772 sec)
+INFO:tensorflow:global_step/sec: 6.7695
+INFO:tensorflow:examples/sec: 108.312
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0027160645, step = 1105800 (14.773 sec)
+INFO:tensorflow:global_step/sec: 6.76915
+INFO:tensorflow:examples/sec: 108.306
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0020751953, step = 1105900 (14.772 sec)
+INFO:tensorflow:global_step/sec: 6.76976
+INFO:tensorflow:examples/sec: 108.316
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (59, 29)
+INFO:tensorflow:loss = 0.0026245117, step = 1106000 (14.772 sec)
+INFO:tensorflow:global_step/sec: 6.76937
+INFO:tensorflow:examples/sec: 108.31
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0024871826, step = 1106100 (14.774 sec)
+INFO:tensorflow:global_step/sec: 6.76884
+INFO:tensorflow:examples/sec: 108.301
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.003616333, step = 1106200 (14.773 sec)
+INFO:tensorflow:global_step/sec: 6.76934
+INFO:tensorflow:examples/sec: 108.309
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0031585693, step = 1106300 (16.233 sec)
+INFO:tensorflow:global_step/sec: 6.16036
+INFO:tensorflow:examples/sec: 98.5657
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (63, 26)
+INFO:tensorflow:loss = 0.0023651123, step = 1106400 (14.774 sec)
+INFO:tensorflow:global_step/sec: 6.76848
+INFO:tensorflow:examples/sec: 108.296
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.002090454, step = 1106500 (14.773 sec)
+INFO:tensorflow:global_step/sec: 6.76921
+INFO:tensorflow:examples/sec: 108.307
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.002532959, step = 1106600 (14.772 sec)
+INFO:tensorflow:global_step/sec: 6.76935
+INFO:tensorflow:examples/sec: 108.31
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0021972656, step = 1106700 (14.774 sec)
+INFO:tensorflow:global_step/sec: 6.76834
+INFO:tensorflow:examples/sec: 108.293
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (67, 33)
+INFO:tensorflow:loss = 0.002380371, step = 1106800 (14.772 sec)
+INFO:tensorflow:global_step/sec: 6.76945
+INFO:tensorflow:examples/sec: 108.311
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0026245117, step = 1106900 (14.773 sec)
+INFO:tensorflow:global_step/sec: 6.76927
+INFO:tensorflow:examples/sec: 108.308
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0016784668, step = 1107000 (14.773 sec)
+INFO:tensorflow:global_step/sec: 6.76924
+INFO:tensorflow:examples/sec: 108.308
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0025939941, step = 1107100 (14.772 sec)
+INFO:tensorflow:global_step/sec: 6.76925
+INFO:tensorflow:examples/sec: 108.308
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (71, 29)
+INFO:tensorflow:loss = 0.0027618408, step = 1107200 (16.305 sec)
+INFO:tensorflow:global_step/sec: 6.13304
+INFO:tensorflow:examples/sec: 98.1286
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0029144287, step = 1107300 (14.773 sec)
+INFO:tensorflow:global_step/sec: 6.76903
+INFO:tensorflow:examples/sec: 108.305
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.002380371, step = 1107400 (14.773 sec)
+INFO:tensorflow:global_step/sec: 6.76876
+INFO:tensorflow:examples/sec: 108.3
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0030212402, step = 1107500 (14.774 sec)
+INFO:tensorflow:global_step/sec: 6.76892
+INFO:tensorflow:examples/sec: 108.303
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (75, 36)
+INFO:tensorflow:loss = 0.0023345947, step = 1107600 (14.775 sec)
+INFO:tensorflow:global_step/sec: 6.76816
+INFO:tensorflow:examples/sec: 108.291
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0022125244, step = 1107700 (14.772 sec)
+INFO:tensorflow:global_step/sec: 6.76948
+INFO:tensorflow:examples/sec: 108.312
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0027618408, step = 1107800 (14.771 sec)
+INFO:tensorflow:global_step/sec: 6.76987
+INFO:tensorflow:examples/sec: 108.318
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0028076172, step = 1107900 (14.774 sec)
+INFO:tensorflow:global_step/sec: 6.76837
+INFO:tensorflow:examples/sec: 108.294
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (79, 43)
+INFO:tensorflow:loss = 0.0024108887, step = 1108000 (14.774 sec)
+INFO:tensorflow:global_step/sec: 6.76872
+INFO:tensorflow:examples/sec: 108.3
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0021209717, step = 1108100 (16.217 sec)
+INFO:tensorflow:global_step/sec: 6.16622
+INFO:tensorflow:examples/sec: 98.6595
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0022583008, step = 1108200 (14.774 sec)
+INFO:tensorflow:global_step/sec: 6.7688
+INFO:tensorflow:examples/sec: 108.301
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0021972656, step = 1108300 (14.771 sec)
+INFO:tensorflow:global_step/sec: 6.76964
+INFO:tensorflow:examples/sec: 108.314
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (83, 40)
+INFO:tensorflow:loss = 0.0021209717, step = 1108400 (14.773 sec)
+INFO:tensorflow:global_step/sec: 6.7692
+INFO:tensorflow:examples/sec: 108.307
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0022277832, step = 1108500 (14.774 sec)
+INFO:tensorflow:global_step/sec: 6.7688
+INFO:tensorflow:examples/sec: 108.301
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0023498535, step = 1108600 (14.773 sec)
+INFO:tensorflow:global_step/sec: 6.76896
+INFO:tensorflow:examples/sec: 108.303
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.002319336, step = 1108700 (14.772 sec)
+INFO:tensorflow:global_step/sec: 6.76961
+INFO:tensorflow:examples/sec: 108.314
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (87, 47)
+INFO:tensorflow:loss = 0.0023651123, step = 1108800 (14.773 sec)
+INFO:tensorflow:global_step/sec: 6.76902
+INFO:tensorflow:examples/sec: 108.304
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0016403198, step = 1108900 (14.771 sec)
+INFO:tensorflow:global_step/sec: 6.77012
+INFO:tensorflow:examples/sec: 108.322
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0019836426, step = 1109000 (16.263 sec)
+INFO:tensorflow:global_step/sec: 6.14899
+INFO:tensorflow:examples/sec: 98.3838
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0018997192, step = 1109100 (14.772 sec)
+INFO:tensorflow:global_step/sec: 6.76956
+INFO:tensorflow:examples/sec: 108.313
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (91, 44)
+INFO:tensorflow:loss = 0.0018463135, step = 1109200 (14.772 sec)
+INFO:tensorflow:global_step/sec: 6.76944
+INFO:tensorflow:examples/sec: 108.311
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.002243042, step = 1109300 (14.774 sec)
+INFO:tensorflow:global_step/sec: 6.76826
+INFO:tensorflow:examples/sec: 108.292
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0020446777, step = 1109400 (14.775 sec)
+INFO:tensorflow:global_step/sec: 6.76883
+INFO:tensorflow:examples/sec: 108.301
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0022277832, step = 1109500 (14.772 sec)
+INFO:tensorflow:global_step/sec: 6.7692
+INFO:tensorflow:examples/sec: 108.307
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (95, 51)
+INFO:tensorflow:loss = 0.0020141602, step = 1109600 (14.773 sec)
+INFO:tensorflow:global_step/sec: 6.76954
+INFO:tensorflow:examples/sec: 108.313
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0019989014, step = 1109700 (14.773 sec)
+INFO:tensorflow:global_step/sec: 6.7689
+INFO:tensorflow:examples/sec: 108.302
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0024108887, step = 1109800 (14.774 sec)
+INFO:tensorflow:global_step/sec: 6.76873
+INFO:tensorflow:examples/sec: 108.3
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:loss = 0.0018081665, step = 1109900 (16.433 sec)
+INFO:tensorflow:global_step/sec: 6.0852
+INFO:tensorflow:examples/sec: 97.3633
+INFO:tensorflow:Enqueue next (100) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (100) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (99, 46)
+INFO:tensorflow:loss = 0.0018615723, step = 1110000 (14.773 sec)
+INFO:tensorflow:global_step/sec: 6.76906
+INFO:tensorflow:examples/sec: 108.305
+INFO:tensorflow:Stop infeed thread controller
+INFO:tensorflow:Shutting down InfeedController thread.
+INFO:tensorflow:InfeedController received shutdown signal, stopping.
+INFO:tensorflow:Infeed thread finished, shutting down.
+INFO:tensorflow:infeed marked as finished
+INFO:tensorflow:Stop output thread controller
+INFO:tensorflow:Shutting down OutfeedController thread.
+INFO:tensorflow:OutfeedController received shutdown signal, stopping.
+INFO:tensorflow:Outfeed thread finished, shutting down.
+INFO:tensorflow:outfeed marked as finished
+INFO:tensorflow:Shutdown TPU system.
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 1110000...
+INFO:tensorflow:Before Save.
+INFO:tensorflow:About to write a checkpoint
+INFO:tensorflow:Saving checkpoints for 1110000 into gs://t5-tutorial-storage/models-v3-8/t5.1.1.xl_ssm/model.ckpt.
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/training/saver.py:971: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 1110000...
+INFO:tensorflow:Done writing checkpoint.
+INFO:tensorflow:Done with the session.
+INFO:tensorflow:Loss for final step: 0.0018615723.
+INFO:tensorflow:training_loop marked as finished
+WARNING:tensorflow:legacy mode - ignoring custom sublayers
+WARNING:tensorflow:legacy mode - ignoring custom sublayers
+INFO:tensorflow:Using config: {'_model_dir': 'gs://t5-tutorial-storage/models-v3-8/t5.1.1.xl_ssm', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+cluster_def {
+  job {
+    name: "worker"
+    tasks {
+      key: 0
+      value: "10.240.1.2:8470"
+    }
+  }
+}
+isolate_session_state: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': None, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': ClusterSpec({'worker': ['10.240.1.2:8470']}), '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': 'grpc://10.240.1.2:8470', '_evaluation_master': 'grpc://10.240.1.2:8470', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1, '_tpu_config': TPUConfig(iterations_per_loop=100, num_shards=None, num_cores_per_replica=1, per_host_input_for_training=4, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_cluster': <tensorflow.python.distribute.cluster_resolver.tpu_cluster_resolver.TPUClusterResolver object at 0x7f65fc0c6e80>}
+INFO:tensorflow:_TPUContext: eval_on_tpu True
+INFO:absl:Load dataset info from gs://t5-tutorial-storage/data/trivia_qa/unfiltered.nocontext/1.1.0
+INFO:absl:Reusing dataset trivia_qa (gs://t5-tutorial-storage/data/trivia_qa/unfiltered.nocontext/1.1.0)
+INFO:absl:Constructing tf.data.Dataset for split validation, from gs://t5-tutorial-storage/data/trivia_qa/unfiltered.nocontext/1.1.0
+INFO:tensorflow:Checkpoint path gs://t5-tutorial-storage/models-v3-8/t5.1.1.xl_ssm/model.ckpt-1110000
+INFO:tensorflow:Querying Tensorflow master (grpc://10.240.1.2:8470) for TPU system metadata.
+2020-07-07 08:50:06.795716: W tensorflow/core/distributed_runtime/rpc/grpc_session.cc:373] GrpcSession::ListDevices will initialize the session with an empty graph and other defaults because the session has not yet been created.
+INFO:tensorflow:Initializing TPU system (master: grpc://10.240.1.2:8470) to fetch topology for model parallelism. This might take a while.
+INFO:tensorflow:Found TPU system:
+INFO:tensorflow:*** Num TPU Cores: 8
+INFO:tensorflow:*** Num TPU Workers: 1
+INFO:tensorflow:*** Num TPU Cores Per Worker: 8
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:CPU:0, CPU, -1, 7533422438908897072)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:0, TPU, 17179869184, -6065503160728324497)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:1, TPU, 17179869184, 7853974898609235456)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:2, TPU, 17179869184, -4457928722324512756)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:3, TPU, 17179869184, -8626289396457069816)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:4, TPU, 17179869184, -2971832177554114716)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:5, TPU, 17179869184, 350991301446816209)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:6, TPU, 17179869184, -4349122040420970381)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU:7, TPU, 17179869184, 940405642090098414)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:TPU_SYSTEM:0, TPU_SYSTEM, 17179869184, 4933698774021788044)
+INFO:tensorflow:*** Available Device: _DeviceAttributes(/job:worker/replica:0/task:0/device:XLA_CPU:0, XLA_CPU, 17179869184, 1962604806356682646)
+INFO:tensorflow:Calling model_fn.
+INFO:absl:Load dataset info from gs://t5-tutorial-storage/data/trivia_qa/unfiltered.nocontext/1.1.0
+INFO:absl:Reusing dataset trivia_qa (gs://t5-tutorial-storage/data/trivia_qa/unfiltered.nocontext/1.1.0)
+INFO:absl:Constructing tf.data.Dataset for split validation, from gs://t5-tutorial-storage/data/trivia_qa/unfiltered.nocontext/1.1.0
+INFO:tensorflow:enable_2d_tiling: False
+INFO:tensorflow:num_cores_per_replica: 1
+INFO:tensorflow:computation_shape: [1, 1, 1]
+INFO:tensorflow:num_replicas: 8
+INFO:tensorflow:device_assignment.topology.device_coordinates: [[[0 0 0]
+  [0 0 1]
+  [1 0 0]
+  [1 0 1]
+  [0 1 0]
+  [0 1 1]
+  [1 1 0]
+  [1 1 1]]]
+INFO:tensorflow:device_assignment.core_assignment: [[[0 0 0]]
+
+ [[0 0 1]]
+
+ [[0 1 0]]
+
+ [[0 1 1]]
+
+ [[1 0 0]]
+
+ [[1 0 1]]
+
+ [[1 1 0]]
+
+ [[1 1 1]]]
+INFO:tensorflow:auto_logical_to_physical_tpu logical_shape=[8] physical_shape=[2, 2, 2]
+INFO:tensorflow:auto_logical_to_physical_tpu logical_to_physical = [(0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 1, 0), (1, 1, 1), (1, 0, 0), (1, 0, 1)]
+WARNING:tensorflow:SimdMeshImpl ignoring devices ['', '', '', '', '', '', '', '']
+INFO:tensorflow:SimdMeshImpl init: Shape[model=8] LayoutRules{('d_ff', 'model'), ('batch', 'batch'), ('heads', 'model'), ('ensemble', 'ensemble'), ('experts', 'batch'), ('vocab', 'model')}
+INFO:tensorflow:Device Assignment: <tensorflow.python.tpu.device_assignment.DeviceAssignment object at 0x7f6577072b38>
+WARNING:tensorflow:Using default tf glorot_uniform_initializer for variable encoder/block_000/layer_000/SelfAttention/relative_attention_bias  The initialzer will guess the input and output dimensions  based on dimension order.
+WARNING:tensorflow:Using default tf glorot_uniform_initializer for variable decoder/block_000/layer_000/SelfAttention/relative_attention_bias  The initialzer will guess the input and output dimensions  based on dimension order.
+WARNING:tensorflow:Using default tf glorot_uniform_initializer for variable decoder/block_000/layer_000/SelfAttention/relative_attention_bias  The initialzer will guess the input and output dimensions  based on dimension order.
+INFO:tensorflow:Create pnum_tensor
+INFO:tensorflow:Casting <dtype: 'int32'> to float32 for allreduce
+INFO:tensorflow:Variable decoder/block_000/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_000/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_000/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_000/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_000/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_000/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_000/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_000/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_000/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_000/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_000/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_001/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_001/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_001/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_001/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_001/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_001/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_001/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_001/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_001/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_001/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_001/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_002/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_002/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_002/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_002/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_002/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_002/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_002/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_002/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_002/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_002/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_002/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_003/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_003/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_003/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_003/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_003/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_003/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_003/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_003/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_003/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_003/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_003/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_004/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_004/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_004/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_004/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_004/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_004/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_004/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_004/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_004/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_004/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_004/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_005/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_005/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_005/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_005/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_005/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_005/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_005/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_005/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_005/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_005/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_005/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_006/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_006/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_006/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_006/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_006/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_006/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_006/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_006/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_006/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_006/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_006/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_007/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_007/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_007/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_007/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_007/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_007/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_007/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_007/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_007/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_007/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_007/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_008/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_008/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_008/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_008/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_008/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_008/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_008/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_008/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_008/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_008/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_008/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_009/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_009/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_009/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_009/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_009/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_009/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_009/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_009/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_009/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_009/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_009/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_010/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_010/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_010/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_010/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_010/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_010/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_010/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_010/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_010/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_010/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_010/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_011/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_011/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_011/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_011/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_011/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_011/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_011/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_011/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_011/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_011/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_011/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_012/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_012/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_012/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_012/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_012/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_012/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_012/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_012/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_012/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_012/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_012/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_013/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_013/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_013/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_013/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_013/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_013/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_013/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_013/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_013/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_013/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_013/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_014/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_014/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_014/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_014/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_014/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_014/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_014/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_014/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_014/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_014/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_014/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_015/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_015/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_015/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_015/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_015/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_015/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_015/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_015/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_015/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_015/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_015/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_016/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_016/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_016/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_016/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_016/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_016/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_016/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_016/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_016/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_016/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_016/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_017/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_017/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_017/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_017/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_017/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_017/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_017/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_017/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_017/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_017/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_017/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_018/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_018/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_018/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_018/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_018/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_018/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_018/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_018/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_018/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_018/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_018/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_019/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_019/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_019/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_019/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_019/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_019/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_019/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_019/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_019/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_019/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_019/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_020/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_020/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_020/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_020/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_020/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_020/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_020/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_020/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_020/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_020/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_020/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_021/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_021/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_021/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_021/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_021/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_021/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_021/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_021/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_021/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_021/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_021/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_022/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_022/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_022/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_022/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_022/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_022/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_022/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_022/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_022/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_022/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_022/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/block_023/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_023/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_023/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_023/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_023/layer_001/EncDecAttention/k                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_023/layer_001/EncDecAttention/o                size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable decoder/block_023/layer_001/EncDecAttention/q                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_023/layer_001/EncDecAttention/v                size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable decoder/block_023/layer_002/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_023/layer_002/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable decoder/block_023/layer_002/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable decoder/logits/kernel                                        size 65798144     slice_size 8224768      Shape[d_model=2048, vocab=32128]                            
+INFO:tensorflow:Variable encoder/block_000/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_000/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_000/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_000/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_000/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_000/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_000/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_001/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_001/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_001/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_001/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_001/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_001/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_001/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_002/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_002/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_002/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_002/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_002/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_002/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_002/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_003/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_003/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_003/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_003/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_003/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_003/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_003/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_004/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_004/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_004/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_004/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_004/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_004/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_004/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_005/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_005/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_005/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_005/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_005/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_005/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_005/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_006/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_006/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_006/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_006/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_006/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_006/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_006/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_007/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_007/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_007/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_007/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_007/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_007/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_007/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_008/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_008/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_008/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_008/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_008/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_008/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_008/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_009/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_009/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_009/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_009/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_009/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_009/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_009/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_010/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_010/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_010/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_010/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_010/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_010/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_010/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_011/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_011/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_011/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_011/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_011/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_011/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_011/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_012/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_012/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_012/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_012/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_012/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_012/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_012/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_013/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_013/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_013/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_013/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_013/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_013/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_013/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_014/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_014/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_014/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_014/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_014/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_014/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_014/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_015/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_015/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_015/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_015/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_015/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_015/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_015/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_016/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_016/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_016/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_016/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_016/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_016/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_016/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_017/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_017/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_017/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_017/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_017/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_017/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_017/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_018/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_018/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_018/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_018/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_018/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_018/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_018/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_019/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_019/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_019/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_019/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_019/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_019/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_019/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_020/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_020/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_020/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_020/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_020/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_020/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_020/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_021/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_021/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_021/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_021/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_021/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_021/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_021/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_022/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_022/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_022/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_022/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_022/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_022/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_022/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable encoder/block_023/layer_000/SelfAttention/k                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_023/layer_000/SelfAttention/o                  size 4194304      slice_size 524288       Shape[heads=2048, d_model=2048]                             
+INFO:tensorflow:Variable encoder/block_023/layer_000/SelfAttention/q                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_023/layer_000/SelfAttention/v                  size 4194304      slice_size 524288       Shape[d_model=2048, heads=2048]                             
+INFO:tensorflow:Variable encoder/block_023/layer_001/DenseReluDense/wi_0/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_023/layer_001/DenseReluDense/wi_1/kernel       size 10485760     slice_size 1310720      Shape[d_model=2048, d_ff=5120]                              
+INFO:tensorflow:Variable encoder/block_023/layer_001/DenseReluDense/wo/kernel         size 10485760     slice_size 1310720      Shape[d_ff=5120, d_model=2048]                              
+INFO:tensorflow:Variable shared/embedding                                             size 65798144     slice_size 8224768      Shape[vocab=32128, d_model=2048]                            
+INFO:tensorflow:Variable stacked/decoder/block_005/layer_000/layer_norm/scale         size 65536        slice_size 65536        Shape[stacked=32, d_model=2048]                             
+INFO:tensorflow:    decoder/block_005/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_005/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_005/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/block_006/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_006/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_006/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/block_007/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_007/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_007/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/block_008/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_008/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_008/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/block_009/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_009/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_009/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/block_010/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_010/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_010/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/block_011/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_011/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_011/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/block_012/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_012/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_012/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/block_013/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_013/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_013/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/block_014/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_014/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_014/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/block_015/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_015/layer_001/layer_norm/scale
+INFO:tensorflow:Variable stacked/decoder/block_015/layer_002/layer_norm/scale         size 53248        slice_size 53248        Shape[stacked=26, d_model=2048]                             
+INFO:tensorflow:    decoder/block_015/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/block_016/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_016/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_016/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/block_017/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_017/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_017/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/block_018/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_018/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_018/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/block_019/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_019/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_019/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/block_020/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_020/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_020/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/block_021/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_021/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_021/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/block_022/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_022/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_022/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/block_023/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_023/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_023/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/final_layer_norm/scale
+INFO:tensorflow:Variable stacked/encoder/block_000/layer_000/SelfAttention/relative_attention_bias size 2048         slice_size 256          Shape[stacked=2, heads=32, buckets=32]                      
+INFO:tensorflow:    encoder/block_000/layer_000/SelfAttention/relative_attention_bias
+INFO:tensorflow:    decoder/block_000/layer_000/SelfAttention/relative_attention_bias
+INFO:tensorflow:Variable stacked/encoder/block_000/layer_000/layer_norm/scale         size 65536        slice_size 65536        Shape[stacked=32, d_model=2048]                             
+INFO:tensorflow:    encoder/block_000/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_000/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/block_001/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_001/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/block_002/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_002/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/block_003/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_003/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/block_004/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_004/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/block_005/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_005/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/block_006/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_006/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/block_007/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_007/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/block_008/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_008/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/block_009/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_009/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/block_010/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_010/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/block_011/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_011/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/block_012/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_012/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/block_013/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_013/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/block_014/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_014/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/block_015/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_015/layer_001/layer_norm/scale
+INFO:tensorflow:Variable stacked/encoder/block_016/layer_000/layer_norm/scale         size 65536        slice_size 65536        Shape[stacked=32, d_model=2048]                             
+INFO:tensorflow:    encoder/block_016/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_016/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/block_017/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_017/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/block_018/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_018/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/block_019/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_019/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/block_020/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_020/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/block_021/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_021/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/block_022/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_022/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/block_023/layer_000/layer_norm/scale
+INFO:tensorflow:    encoder/block_023/layer_001/layer_norm/scale
+INFO:tensorflow:    encoder/final_layer_norm/scale
+INFO:tensorflow:    decoder/block_000/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_000/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_000/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/block_001/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_001/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_001/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/block_002/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_002/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_002/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/block_003/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_003/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_003/layer_002/layer_norm/scale
+INFO:tensorflow:    decoder/block_004/layer_000/layer_norm/scale
+INFO:tensorflow:    decoder/block_004/layer_001/layer_norm/scale
+INFO:tensorflow:    decoder/block_004/layer_002/layer_norm/scale
+INFO:tensorflow:Trainable Variables            count: 439     Total size: 2849757184       Total slice_size: 356438272      
+INFO:tensorflow:All Variables                  count: 439     Total size: 2849757184       Total slice_size: 356438272      
+INFO:tensorflow:Counters:
+allreduce: 1.65e+10
+ allreduce/[0]: 1.65e+10
+  allreduce/[0]/einsum_op: 1.65e+10
+einsum: 2.43e+13
+einsum_unique: 2.43e+13
+output: 1.55e+11
+ output/AddOperation: 2.62e+10
+ output/BinaryOpWithBroadcasting: 2.19e+08
+ output/Constant: 8.05e+08
+ output/EinsumOperation: 7.65e+10
+ output/ImportOperation: 8.37e+04
+ output/MinMaxOperation: 9.5e+06
+ output/OneHotOperation: 7.28e+08
+ output/RangeOperation: 2.05e+03
+ output/ReduceOperation: 4.57e+07
+ output/ReshapeOperation: 1.26e+10
+ output/ScalarAddOperation: 2.03e+09
+ output/ScalarMultiplyOperation: 6.28e+09
+ output/ShiftOperation: 6.55e+04
+ output/SlicewiseOperation: 2.38e+10
+ output/StackedVariable: 2e+06
+ output/StopGradient: 2.42e+09
+ output/UnstackOperation: 2e+06
+ output/Variable: 2.85e+09
+ output/WhileLoopOperation: 8.05e+08
+output_unique: 7.14e+10
+ output_unique/AddOperation: 1.21e+10
+ output_unique/BinaryOpWithBroadcasting: 2.73e+07
+ output_unique/Constant: 8.05e+08
+ output_unique/EinsumOperation: 2.78e+10
+ output_unique/ImportOperation: 1.05e+04
+ output_unique/MinMaxOperation: 1.19e+06
+ output_unique/OneHotOperation: 5.52e+08
+ output_unique/RangeOperation: 256
+ output_unique/ReduceOperation: 3.87e+07
+ output_unique/ReshapeOperation: 6.86e+09
+ output_unique/ScalarAddOperation: 2.02e+09
+ output_unique/ScalarMultiplyOperation: 6.07e+09
+ output_unique/ShiftOperation: 8.19e+03
+ output_unique/SlicewiseOperation: 9.01e+09
+ output_unique/StackedVariable: 2.52e+05
+ output_unique/StopGradient: 2.42e+09
+ output_unique/UnstackOperation: 2.52e+05
+ output_unique/Variable: 2.85e+09
+ output_unique/WhileLoopOperation: 8.05e+08
+variables: 2.85e+09
+ variables/trainable: 2.85e+09
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:TPU job name worker
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from gs://t5-tutorial-storage/models-v3-8/t5.1.1.xl_ssm/model.ckpt-1110000
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Starting infeed thread controller.
+INFO:tensorflow:Starting outfeed thread controller.
+INFO:tensorflow:Initialized dataset iterators in 1 seconds
+INFO:tensorflow:Before copy master to slices.
+INFO:tensorflow:Done with copy master to slices.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (0, 0)
+INFO:tensorflow:decoded 0: trivia question: what do the 3 dots mean in math?
+INFO:tensorflow:            -> a placeholder for a variable
+INFO:tensorflow:decoded 1: trivia question: who is playing the halftime show at super bowl 2016?
+INFO:tensorflow:            -> lady gaga
+INFO:tensorflow:decoded 2: trivia question: who won the 2017 sports personality of the year?
+INFO:tensorflow:            -> roger federer
+INFO:tensorflow:decoded 4: trivia question: who has made the most premier league appearances?
+INFO:tensorflow:            -> gary speed
+INFO:tensorflow:decoded 8: trivia question: when was the first hunger games book published?
+INFO:tensorflow:            -> july 20, 2012
+INFO:tensorflow:decoded 16: trivia question: who plays emma in air bud world pup?
+INFO:tensorflow:            -> emily elizabeth johnson
+INFO:tensorflow:decoded 32: trivia question: who scored the most points in their nba career?
+INFO:tensorflow:            -> kareem abdul-jabbar
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:decoded 64: trivia question: who gave the famous objective co relative theory?
+INFO:tensorflow:            -> john locke
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:decoded 128: trivia question: who acts as the chairman of the election commission?
+INFO:tensorflow:            -> om prakash rawat
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:decoded 256: trivia question: who is the longest serving member of the house in history?
+INFO:tensorflow:            -> john tyler
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:decoded 512: trivia question: how tall is the actor who plays hagrid in harry potter?
+INFO:tensorflow:            -> a tall man
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:decoded 1024: trivia question: what is it called when you believe in greek gods?
+INFO:tensorflow:            -> olymism
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:decoded 2048: trivia question: when did marathon change its name to snickers?
+INFO:tensorflow:            -> 1971
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (51, 0)
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:decoded 4096: trivia question: which famous huntsman who was known for wearing a grey coat was buried in caldbeck cemetery
+INFO:tensorflow:            -> john peel
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:decoded 8192: trivia question: who was the american president when the berlin wall was constructed?
+INFO:tensorflow:            -> john f. kennedy
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (167, 0)
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
+INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Stop infeed thread controller
+INFO:tensorflow:Shutting down InfeedController thread.
+INFO:tensorflow:InfeedController received shutdown signal, stopping.
+INFO:tensorflow:Infeed thread finished, shutting down.
+INFO:tensorflow:infeed marked as finished
+INFO:tensorflow:Stop output thread controller
+INFO:tensorflow:Shutting down OutfeedController thread.
+INFO:tensorflow:OutfeedController received shutdown signal, stopping.
+INFO:tensorflow:Outfeed thread finished, shutting down.
+INFO:tensorflow:outfeed marked as finished
+INFO:tensorflow:Shutdown TPU system.
+INFO:tensorflow:prediction_loop marked as finished
+INFO:tensorflow:prediction_loop marked as finished
+INFO:tensorflow:eval/nq_context_free/accuracy at step 1110000: 14.414
+INFO:tensorflow:eval/triviaqa_context_free/accuracy at step 1110000: 30.328
+Setting up GCS access...
+Running on TPU: grpc://10.240.1.2:8470
+A few raw validation examples...
+{'question': b'what do the 3 dots mean in math?', 'answer': b'the therefore sign (\xe2\x88\xb4) is generally used before a logical consequence, such as the conclusion of a syllogism'}
+{'question': b'who is playing the halftime show at super bowl 2016?', 'answer': b'Coldplay with special guest performers Beyonc\xc3\xa9 and Bruno Mars'}
+{'question': b'who won the 2017 sports personality of the year?', 'answer': b'Mo Farah'}
+{'question': b'where was the world economic forum held this year?', 'answer': b'Davos, a mountain resort in Graub\xc3\xbcnden, in the eastern Alps region of Switzerland'}
+{'question': b'who has made the most premier league appearances?', 'answer': b'Gareth Barry'}
+A few preprocessed validation examples...
+{'inputs_plaintext': b"trivia question: who plays steve's wife on my three sons?", 'inputs': array([22377,   822,    10,   113,  4805,     3,   849,   162,    31,
+           7,  2512,    30,    82,   386,   520,     7,    58,     1]), 'targets_plaintext': b'beverly garland', 'targets': array([  36,  624,  120, 7922, 7721,    1])}
+{'inputs_plaintext': b'trivia question: who has the most conference championships in college basketball?', 'inputs': array([22377,   822,    10,   113,    65,     8,   167,  2542, 10183,
+           7,    16,  1900,  8498,    58,     1]), 'targets_plaintext': b'kansas', 'targets': array([   3, 3304,    7,    9,    7,    1])}
+{'inputs_plaintext': b'trivia question: when did end of the road come out?', 'inputs': array([22377,   822,    10,   116,   410,   414,    13,     8,  1373,
+         369,    91,    58,     1]), 'targets_plaintext': b'june 30, 1992', 'targets': array([    3,  6959,    15, 11558,  9047,     1])}
+{'inputs_plaintext': b'trivia question: when did virgin australia (formerly virgin blue) commence flying in australia?', 'inputs': array([22377,   822,    10,   116,   410, 24556, 23407,    41, 14034,
+       24556,  1692,    61,  9158,  7070,    16, 23407,    58,     1]), 'targets_plaintext': b'november 1999', 'targets': array([    3,  5326, 18247,  5247,     1])}
+{'inputs_plaintext': b'trivia question: how many countries does cadbury sell its products?', 'inputs': array([22377,   822,    10,   149,   186,  1440,   405,   212,    26,
+        7165,  1789,   165,   494,    58,     1]), 'targets_plaintext': b'more than 50 countries worldwide', 'targets': array([  72,  145,  943, 1440, 4388,    1])}
+A few raw validation examples...
+{'answer': {'aliases': array([b'Torquemada (disambiguation)', b'Torquemada'], dtype=object), 'matched_wiki_entity_name': b'', 'normalized_aliases': array([b'torquemada', b'torquemada disambiguation'], dtype=object), 'normalized_matched_wiki_entity_name': b'', 'normalized_value': b'torquemada', 'type': b'WikipediaEntity', 'value': b'Torquemada'}, 'entity_pages': {'doc_source': array([], dtype=object), 'filename': array([], dtype=object), 'title': array([], dtype=object), 'wiki_context': array([], dtype=object)}, 'question': b'In 1483, who was appointed the first grand inquisitor of the Spanish Inquisition?', 'question_id': b'qw_16011', 'question_source': b'http://www.quizwise.com/', 'search_results': {'description': array([], dtype=object), 'filename': array([], dtype=object), 'rank': array([], dtype=int32), 'search_context': array([], dtype=object), 'title': array([], dtype=object), 'url': array([], dtype=object)}}
+{'answer': {'aliases': array([b'Austerlitz (disambiguation)', b'Austerlitz', b'AUSTERLITZ'],
+      dtype=object), 'matched_wiki_entity_name': b'', 'normalized_aliases': array([b'austerlitz', b'austerlitz disambiguation'], dtype=object), 'normalized_matched_wiki_entity_name': b'', 'normalized_value': b'austerlitz', 'type': b'WikipediaEntity', 'value': b'AUSTERLITZ'}, 'entity_pages': {'doc_source': array([], dtype=object), 'filename': array([], dtype=object), 'title': array([], dtype=object), 'wiki_context': array([], dtype=object)}, 'question': b'Which celebrated battle was fought near Brno on 2nd December 1805?', 'question_id': b'dpql_4053', 'question_source': b'https://derbyshirepubquizleague.wordpress.com/', 'search_results': {'description': array([], dtype=object), 'filename': array([], dtype=object), 'rank': array([], dtype=int32), 'search_context': array([], dtype=object), 'title': array([], dtype=object), 'url': array([], dtype=object)}}
+A few preprocessed validation examples...
+{'inputs_plaintext': b'trivia question: in the cartoon series, what kind of dog is scooby doo?', 'inputs': array([22377,   822,    10,    16,     8, 15074,   939,     6,   125,
+         773,    13,  1782,    19,     3,  3523,    32,   969,   103,
+          32,    58,     1]), 'targets_plaintext': b'great dane', 'targets': array([ 248,    3, 3768,   15,    1])}
+{'inputs_plaintext': b'trivia question: who was the first englishman to make a powered flight', 'inputs': array([22377,   822,    10,   113,    47,     8,   166, 22269,   348,
+          12,   143,     3,     9, 10028,  3777,     1]), 'targets_plaintext': b'alliot verdon roe', 'targets': array([  66,   23,   32,   17,  548, 2029,    3,   52,   32,   15,    1])}
+{'inputs_plaintext': b'trivia question: \xe2\x80\x98loitering with intent\xe2\x80\x99 is a 1993 autobiography by which british actor?', 'inputs': array([22377,   822,    10,   458,    40,    32,   155,    49,    53,
+          28,  9508,    22,    19,     3,     9,  8388,  1510,  6420,
+       16369,    57,    84,     3,  2160,    17,  1273,  7556,    58,
+           1]), 'targets_plaintext': b'peter o\xe2\x80\x99toole', 'targets': array([  158,   449,     3,    32,    22, 13650,    15,     1])}
