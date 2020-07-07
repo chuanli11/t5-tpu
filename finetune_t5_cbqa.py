@@ -24,16 +24,15 @@ parser.add_argument('--finetune_steps', type=int, default=100000,
                      help='number of steps for finetune')
 parser.add_argument('--save_per_steps', type=int, default=100000,
                      help='number of steps for save model')
-parser.add_argument('--base_dir', type=str, default='gs://caramel-spot-280923',
+parser.add_argument('--base_dir', type=str, default='gs://t5-tutorial-storage',
                      help='Google storage bucket')
+parser.add_argument('--pretrained_dir', type=str, default='gs://t5-tutorial-storage/pretrained',
+                     help='directory to load the pretrained model from')
 parser.add_argument('--tpu_type', type=str, default='v2-8',
                      help='Google TPU instance type')
 args = parser.parse_args()
 
 def main():
-    #MODEL_SIZE = "3B" #@param["small", "base", "large", "3B", "11B"]
-    #FINETUNE_STEPS = 500 #@param {type: "integer"}
-    #SAVE_PER_STEPS = 500
     MODEL_SIZE = args.model_size
     FINETUNE_STEPS = args.finetune_steps
     SAVE_PER_STEPS = args.save_per_steps
@@ -42,6 +41,7 @@ def main():
       raise ValueError("You must enter a BASE_DIR.")
     DATA_DIR = os.path.join(BASE_DIR, "data")
     MODELS_DIR = os.path.join(BASE_DIR, "models-" + args.tpu_type)
+    BASE_PRETRAINED_DIR = args.pretrained_dir
     ON_CLOUD = True
     
     
@@ -241,8 +241,6 @@ def main():
     
     
     # Public GCS path for T5 pre-trained model checkpoints
-    #BASE_PRETRAINED_DIR = "gs://t5-data/pretrained_models"
-    BASE_PRETRAINED_DIR = "gs://t5-data/pretrained_models/cbqa"
     PRETRAINED_DIR = os.path.join(BASE_PRETRAINED_DIR, MODEL_SIZE)
     MODEL_DIR = os.path.join(MODELS_DIR, MODEL_SIZE)
     
@@ -260,12 +258,17 @@ def main():
     model_parallelism, train_batch_size, keep_checkpoint_max = {
             "small": (1, 256, 16),
             "t5.1.1.small_ssm": (1, 256, 16),
+            "t5.1.1.small_ssm_nq": (1, 256, 16),
             "base": (2, 128, 8),
             "large": (8, 64, 4),
             "t5.1.1.xl_ssm": (8, 16, 1),
+            "t5.1.1.xl_ssm_nq": (8, 16, 1),
             "3B": (8, 16, 1),
+            "11B": (8, 16, 1),
             "t5.1.1.xxl_ssm": (8, 16, 1),
-            "11B": (8, 16, 1)}[MODEL_SIZE]
+            "t5.1.1.xxl_ssm_nq": (8, 16, 1),
+            "t5.1.1.xxl_ssm_tqa": (8, 16, 1),
+            }[MODEL_SIZE]
     
     tf.io.gfile.makedirs(MODEL_DIR)
     # The models from our paper are based on the Mesh Tensorflow Transformer.
@@ -291,7 +294,7 @@ def main():
     model.batch_size = train_batch_size * 4
     model.eval(
             mixture_or_task_name="trivia_all",
-            checkpoint_steps="all"
+            checkpoint_steps=-1
     )
 
 if __name__ == "__main__":
