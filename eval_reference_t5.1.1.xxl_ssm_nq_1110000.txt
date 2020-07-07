@@ -2,16 +2,16 @@ WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python
 Instructions for updating:
 non-resource variables are not supported in the long term
 INFO:tensorflow:Loading NQ from cache.
-2020-07-07 06:18:23.675634: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
-2020-07-07 06:18:23.682746: I tensorflow/core/platform/profile_utils/cpu_utils.cc:102] CPU Frequency: 2300000000 Hz
-2020-07-07 06:18:23.683008: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x62fc0e0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
-2020-07-07 06:18:23.683054: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
-2020-07-07 06:18:24.732167: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job worker -> {0 -> 10.240.1.2:8470}
-2020-07-07 06:18:24.732241: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job localhost -> {0 -> localhost:31870}
-2020-07-07 06:18:24.745934: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job worker -> {0 -> 10.240.1.2:8470}
-2020-07-07 06:18:24.745999: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job localhost -> {0 -> localhost:31870}
-2020-07-07 06:18:24.746730: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:390] Started server with target: grpc://localhost:31870
-2020-07-07 06:18:25.600359: W tensorflow/core/kernels/data/cache_dataset_ops.cc:794] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2020-07-07 06:06:10.610356: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-07-07 06:06:10.616287: I tensorflow/core/platform/profile_utils/cpu_utils.cc:102] CPU Frequency: 2300000000 Hz
+2020-07-07 06:06:10.616636: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x79b8bc0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-07-07 06:06:10.616673: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-07-07 06:06:11.711847: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job worker -> {0 -> 10.240.1.2:8470}
+2020-07-07 06:06:11.711911: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job localhost -> {0 -> localhost:31297}
+2020-07-07 06:06:11.727660: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job worker -> {0 -> 10.240.1.2:8470}
+2020-07-07 06:06:11.727719: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:301] Initialize GrpcChannelCache for job localhost -> {0 -> localhost:31297}
+2020-07-07 06:06:11.728528: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:390] Started server with target: grpc://localhost:31297
+2020-07-07 06:06:12.585350: W tensorflow/core/kernels/data/cache_dataset_ops.cc:794] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
 INFO:absl:Load dataset info from gs://t5-tutorial-storage/data/trivia_qa/unfiltered.nocontext/1.1.0
 INFO:absl:Reusing dataset trivia_qa (gs://t5-tutorial-storage/data/trivia_qa/unfiltered.nocontext/1.1.0)
 INFO:absl:Constructing tf.data.Dataset for split None, from gs://t5-tutorial-storage/data/trivia_qa/unfiltered.nocontext/1.1.0
@@ -19,7 +19,7 @@ INFO:absl:Load dataset info from gs://t5-tutorial-storage/data/trivia_qa/unfilte
 INFO:absl:Reusing dataset trivia_qa (gs://t5-tutorial-storage/data/trivia_qa/unfiltered.nocontext/1.1.0)
 INFO:absl:Constructing tf.data.Dataset for split validation, from gs://t5-tutorial-storage/data/trivia_qa/unfiltered.nocontext/1.1.0
 INFO:absl:Load dataset info from gs://t5-tutorial-storage/data/trivia_qa/unfiltered.nocontext/1.1.0
-INFO:tensorflow:Using config: {'_model_dir': 'gs://t5-tutorial-storage/reference/t5.1.1.xxl_ssm_tqa', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+INFO:tensorflow:Using config: {'_model_dir': 'gs://t5-tutorial-storage/reference/t5.1.1.xxl_ssm_nq', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
 cluster_def {
   job {
     name: "worker"
@@ -30,17 +30,17 @@ cluster_def {
   }
 }
 isolate_session_state: true
-, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': None, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': ClusterSpec({'worker': ['10.240.1.2:8470']}), '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': 'grpc://10.240.1.2:8470', '_evaluation_master': 'grpc://10.240.1.2:8470', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1, '_tpu_config': TPUConfig(iterations_per_loop=100, num_shards=None, num_cores_per_replica=1, per_host_input_for_training=4, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_cluster': <tensorflow.python.distribute.cluster_resolver.tpu_cluster_resolver.TPUClusterResolver object at 0x7feee8766f98>}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': None, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': ClusterSpec({'worker': ['10.240.1.2:8470']}), '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': 'grpc://10.240.1.2:8470', '_evaluation_master': 'grpc://10.240.1.2:8470', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1, '_tpu_config': TPUConfig(iterations_per_loop=100, num_shards=None, num_cores_per_replica=1, per_host_input_for_training=4, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_cluster': <tensorflow.python.distribute.cluster_resolver.tpu_cluster_resolver.TPUClusterResolver object at 0x7f78a26aa908>}
 INFO:tensorflow:_TPUContext: eval_on_tpu True
 INFO:absl:Load dataset info from gs://t5-tutorial-storage/data/trivia_qa/unfiltered.nocontext/1.1.0
 INFO:absl:Reusing dataset trivia_qa (gs://t5-tutorial-storage/data/trivia_qa/unfiltered.nocontext/1.1.0)
 INFO:absl:Constructing tf.data.Dataset for split validation, from gs://t5-tutorial-storage/data/trivia_qa/unfiltered.nocontext/1.1.0
-INFO:tensorflow:Checkpoint path gs://t5-tutorial-storage/reference/t5.1.1.xxl_ssm_tqa/model.ckpt-1110000
+INFO:tensorflow:Checkpoint path gs://t5-tutorial-storage/reference/t5.1.1.xxl_ssm_nq/model.ckpt-1110000
 WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
 Instructions for updating:
 If using Keras pass *_constraint arguments to layers.
 INFO:tensorflow:Querying Tensorflow master (grpc://10.240.1.2:8470) for TPU system metadata.
-2020-07-07 06:18:46.371729: W tensorflow/core/distributed_runtime/rpc/grpc_session.cc:373] GrpcSession::ListDevices will initialize the session with an empty graph and other defaults because the session has not yet been created.
+2020-07-07 06:06:33.659119: W tensorflow/core/distributed_runtime/rpc/grpc_session.cc:373] GrpcSession::ListDevices will initialize the session with an empty graph and other defaults because the session has not yet been created.
 INFO:tensorflow:Initializing TPU system (master: grpc://10.240.1.2:8470) to fetch topology for model parallelism. This might take a while.
 INFO:tensorflow:Found TPU system:
 INFO:tensorflow:*** Num TPU Cores: 8
@@ -91,8 +91,8 @@ INFO:tensorflow:device_assignment.core_assignment: [[[0 0 0]]
 INFO:tensorflow:auto_logical_to_physical_tpu logical_shape=[8] physical_shape=[2, 2, 2]
 INFO:tensorflow:auto_logical_to_physical_tpu logical_to_physical = [(0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 1, 0), (1, 1, 1), (1, 0, 0), (1, 0, 1)]
 WARNING:tensorflow:SimdMeshImpl ignoring devices ['', '', '', '', '', '', '', '']
-INFO:tensorflow:SimdMeshImpl init: Shape[model=8] LayoutRules{('d_ff', 'model'), ('vocab', 'model'), ('ensemble', 'ensemble'), ('experts', 'batch'), ('batch', 'batch'), ('heads', 'model')}
-INFO:tensorflow:Device Assignment: <tensorflow.python.tpu.device_assignment.DeviceAssignment object at 0x7feed005e668>
+INFO:tensorflow:SimdMeshImpl init: Shape[model=8] LayoutRules{('batch', 'batch'), ('heads', 'model'), ('ensemble', 'ensemble'), ('vocab', 'model'), ('d_ff', 'model'), ('experts', 'batch')}
+INFO:tensorflow:Device Assignment: <tensorflow.python.tpu.device_assignment.DeviceAssignment object at 0x7f7888650eb8>
 WARNING:tensorflow:Using default tf glorot_uniform_initializer for variable encoder/block_000/layer_000/SelfAttention/relative_attention_bias  The initialzer will guess the input and output dimensions  based on dimension order.
 WARNING:tensorflow:Using default tf glorot_uniform_initializer for variable decoder/block_000/layer_000/SelfAttention/relative_attention_bias  The initialzer will guess the input and output dimensions  based on dimension order.
 WARNING:tensorflow:Using default tf glorot_uniform_initializer for variable decoder/block_000/layer_000/SelfAttention/relative_attention_bias  The initialzer will guess the input and output dimensions  based on dimension order.
@@ -718,7 +718,7 @@ variables: 1.11e+10
 INFO:tensorflow:Done calling model_fn.
 INFO:tensorflow:TPU job name worker
 INFO:tensorflow:Graph was finalized.
-INFO:tensorflow:Restoring parameters from gs://t5-tutorial-storage/reference/t5.1.1.xxl_ssm_tqa/model.ckpt-1110000
+INFO:tensorflow:Restoring parameters from gs://t5-tutorial-storage/reference/t5.1.1.xxl_ssm_nq/model.ckpt-1110000
 INFO:tensorflow:Running local_init_op.
 INFO:tensorflow:Done running local_init_op.
 WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py:834: Variable.load (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
@@ -733,33 +733,33 @@ INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Outfeed finished for iteration (0, 0)
 INFO:tensorflow:decoded 0: trivia question: what do the 3 dots mean in math?
-INFO:tensorflow:            -> 3.142
+INFO:tensorflow:            -> empty set
 INFO:tensorflow:decoded 1: trivia question: who is playing the halftime show at super bowl 2016?
-INFO:tensorflow:            -> Beyonce
+INFO:tensorflow:            -> Lady Gaga
 INFO:tensorflow:decoded 2: trivia question: who won the 2017 sports personality of the year?
-INFO:tensorflow:            -> BEN AINSLIE
+INFO:tensorflow:            -> Usain Bolt
 INFO:tensorflow:decoded 4: trivia question: who has made the most premier league appearances?
-INFO:tensorflow:            -> GARY SPEED
+INFO:tensorflow:            -> Gareth Barry
 INFO:tensorflow:decoded 8: trivia question: when was the first hunger games book published?
-INFO:tensorflow:            -> 2008
+INFO:tensorflow:            -> March 21, 2012
 INFO:tensorflow:decoded 16: trivia question: who plays emma in air bud world pup?
-INFO:tensorflow:            -> LINDSAY LOHAN
+INFO:tensorflow:            -> Grey DeLisle
 INFO:tensorflow:decoded 32: trivia question: who scored the most points in their nba career?
-INFO:tensorflow:            -> Wilt chamberlain
+INFO:tensorflow:            -> Kareem Abdul-Jabbar
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:decoded 64: trivia question: who gave the famous objective co relative theory?
-INFO:tensorflow:            -> GREGOR MULLER
+INFO:tensorflow:            -> Anaximander's
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:decoded 128: trivia question: who acts as the chairman of the election commission?
-INFO:tensorflow:            -> Chancellor of the Exchequer
+INFO:tensorflow:            -> Chief Election Commissioner
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:decoded 256: trivia question: who is the longest serving member of the house in history?
-INFO:tensorflow:            -> (Sir) Peter Tapsell
+INFO:tensorflow:            -> John Dingell
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
@@ -769,7 +769,7 @@ INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:decoded 512: trivia question: how tall is the actor who plays hagrid in harry potter?
-INFO:tensorflow:            -> 7 feet
+INFO:tensorflow:            -> 8 ft 7 in
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
@@ -787,7 +787,7 @@ INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:decoded 1024: trivia question: what is it called when you believe in greek gods?
-INFO:tensorflow:            -> Paganism
+INFO:tensorflow:            -> Hellenism
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
@@ -821,7 +821,7 @@ INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:decoded 2048: trivia question: when did marathon change its name to snickers?
-INFO:tensorflow:            -> 1930s
+INFO:tensorflow:            -> 1928
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
@@ -848,7 +848,6 @@ INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (45, 0)
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
@@ -875,6 +874,7 @@ INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (58, 0)
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
@@ -888,7 +888,7 @@ INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:decoded 4096: trivia question: which famous huntsman who was known for wearing a grey coat was buried in caldbeck cemetery
-INFO:tensorflow:            -> John Peel
+INFO:tensorflow:            -> William Charles Anderson
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
@@ -997,7 +997,6 @@ INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (118, 0)
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
@@ -1019,7 +1018,7 @@ INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:decoded 8192: trivia question: who was the american president when the berlin wall was constructed?
-INFO:tensorflow:            -> John F Kennedy
+INFO:tensorflow:            -> President Richard Nixon
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
@@ -1082,6 +1081,7 @@ INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
+INFO:tensorflow:Outfeed finished for iteration (159, 0)
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
@@ -1152,7 +1152,6 @@ INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
-INFO:tensorflow:Outfeed finished for iteration (194, 0)
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
 INFO:tensorflow:Dequeue next (1) batch(es) of data from outfeed.
 INFO:tensorflow:Enqueue next (1) batch(es) of data to infeed.
@@ -1206,8 +1205,8 @@ INFO:tensorflow:outfeed marked as finished
 INFO:tensorflow:Shutdown TPU system.
 INFO:tensorflow:prediction_loop marked as finished
 INFO:tensorflow:prediction_loop marked as finished
-INFO:tensorflow:eval/nq_context_free/accuracy at step 1110000: 10.051
-INFO:tensorflow:eval/triviaqa_context_free/accuracy at step 1110000: 91.037
+INFO:tensorflow:eval/nq_context_free/accuracy at step 1110000: 27.203
+INFO:tensorflow:eval/triviaqa_context_free/accuracy at step 1110000: 31.185
 Setting up GCS access...
 Running on TPU: grpc://10.240.1.2:8470
 A few raw validation examples...
@@ -1217,31 +1216,36 @@ A few raw validation examples...
 {'question': b'where was the world economic forum held this year?', 'answer': b'Davos, a mountain resort in Graub\xc3\xbcnden, in the eastern Alps region of Switzerland'}
 {'question': b'who has made the most premier league appearances?', 'answer': b'Gareth Barry'}
 A few preprocessed validation examples...
-{'inputs_plaintext': b'trivia question: what material was used to build the roofs of houses in burzahom?', 'inputs': array([22377,   822,    10,   125,  1037,    47,   261,    12,   918,
-           8,  2955,     7,    13,  4790,    16,  7018,  1629, 10207,
-          58,     1]), 'targets_plaintext': b'birch', 'targets': array([   3, 8781,  524,    1])}
-{'inputs_plaintext': b'trivia question: when did the song the joker come out?', 'inputs': array([22377,   822,    10,   116,   410,     8,  2324,     8, 10802,
-          52,   369,    91,    58,     1]), 'targets_plaintext': b'october 1973', 'targets': array([    3,    32,    75,   235,  1152, 17107,     1])}
-{'inputs_plaintext': b'trivia question: which is the site of the light dependent reactions of photosynthesis?', 'inputs': array([22377,   822,    10,    84,    19,     8,   353,    13,     8,
-         659,  8976, 14081,    13,  1202, 17282,    58,     1]), 'targets_plaintext': b'the thylakoid membranes', 'targets': array([    8,     3,   189,    63,    40,  1639,    32,    23,    26,
-       13304,     7,     1])}
-{'inputs_plaintext': b'trivia question: who wrote old flames cant hold a candle to you?', 'inputs': array([22377,   822,    10,   113,  2832,   625, 12314,     7,    54,
-          17,  1520,     3,     9, 14788,    12,    25,    58,     1]), 'targets_plaintext': b'pebe sebert and hugh moffatt', 'targets': array([  158,   346,   142,  7041,    11, 18233,   107,     3,    51,
-        1647,   144,    17,     1])}
-{'inputs_plaintext': b'trivia question: when was the last time oklahoma won a national championship in football?', 'inputs': array([22377,   822,    10,   116,    47,     8,   336,    97,     3,
-          32,  8142, 10207,     9,   751,     3,     9,  1157, 10183,
-          16,  3370,    58,     1]), 'targets_plaintext': b'2000', 'targets': array([2766,    1])}
+{'inputs_plaintext': b'trivia question: the recipient of first jnanpith award was an author which language?', 'inputs': array([22377,   822,    10,     8, 11095,    13,   166,     3,   354,
+          29,   152,  5230,   107,  2760,    47,    46,  2291,    84,
+        1612,    58,     1]), 'targets_plaintext': b'malayalam', 'targets': array([    3,    51, 22858,    40,   265,     1])}
+{'inputs_plaintext': b'trivia question: when did holland become involved in world war 2?', 'inputs': array([22377,   822,    10,   116,   410,  3534,   195,   232,   582,
+        1381,    16,   296,   615,   204,    58,     1]), 'targets_plaintext': b'10 may 1940', 'targets': array([  335,   164, 15830,     1])}
+{'inputs_plaintext': b'trivia question: what is the name of the weapon the grim reaper carries?', 'inputs': array([22377,   822,    10,   125,    19,     8,   564,    13,     8,
+       10931,     8, 20425, 22993,    49,     3, 11078,    58,     1]), 'targets_plaintext': b'scythe', 'targets': array([  3,   7,  75,  63, 532,   1])}
+{'inputs_plaintext': b'trivia question: who plays the evil doctor in wonder woman?', 'inputs': array([22377,   822,    10,   113,  4805,     8,  8293,  2472,    16,
+        3337,  2335,    58,     1]), 'targets_plaintext': b'elena anaya', 'targets': array([  3, 400,  29,   9,  46,   9,  63,   9,   1])}
+{'inputs_plaintext': b'trivia question: what is foreign account tax compliance act (fatca)?', 'inputs': array([22377,   822,    10,   125,    19,  2959,   905,  1104,  5856,
+        1810,    41,  6589,   658,    61,    58,     1]), 'targets_plaintext': b"a 2010 united states federal law requiring all non-u.s. ( foreign ') financial institutions (ffis) to search their records for customers with indicia of ' u.s.-person  status, such as a u.s. place of birth, and to report the assets and identities of such persons to the u.s. department of the treasury", 'targets': array([    3,     9,  2735, 18279,  2315,  2822,   973,     3, 10695,
+          66,   529,    18,    76,     5,     7,     5,    41,  2959,
+           3,    31,    61,   981,  4222,    41,    89,    89,   159,
+          61,    12,   960,    70,     1])}
 A few raw validation examples...
 {'answer': {'aliases': array([b'Torquemada (disambiguation)', b'Torquemada'], dtype=object), 'matched_wiki_entity_name': b'', 'normalized_aliases': array([b'torquemada', b'torquemada disambiguation'], dtype=object), 'normalized_matched_wiki_entity_name': b'', 'normalized_value': b'torquemada', 'type': b'WikipediaEntity', 'value': b'Torquemada'}, 'entity_pages': {'doc_source': array([], dtype=object), 'filename': array([], dtype=object), 'title': array([], dtype=object), 'wiki_context': array([], dtype=object)}, 'question': b'In 1483, who was appointed the first grand inquisitor of the Spanish Inquisition?', 'question_id': b'qw_16011', 'question_source': b'http://www.quizwise.com/', 'search_results': {'description': array([], dtype=object), 'filename': array([], dtype=object), 'rank': array([], dtype=int32), 'search_context': array([], dtype=object), 'title': array([], dtype=object), 'url': array([], dtype=object)}}
 {'answer': {'aliases': array([b'Austerlitz (disambiguation)', b'Austerlitz', b'AUSTERLITZ'],
       dtype=object), 'matched_wiki_entity_name': b'', 'normalized_aliases': array([b'austerlitz', b'austerlitz disambiguation'], dtype=object), 'normalized_matched_wiki_entity_name': b'', 'normalized_value': b'austerlitz', 'type': b'WikipediaEntity', 'value': b'AUSTERLITZ'}, 'entity_pages': {'doc_source': array([], dtype=object), 'filename': array([], dtype=object), 'title': array([], dtype=object), 'wiki_context': array([], dtype=object)}, 'question': b'Which celebrated battle was fought near Brno on 2nd December 1805?', 'question_id': b'dpql_4053', 'question_source': b'https://derbyshirepubquizleague.wordpress.com/', 'search_results': {'description': array([], dtype=object), 'filename': array([], dtype=object), 'rank': array([], dtype=int32), 'search_context': array([], dtype=object), 'title': array([], dtype=object), 'url': array([], dtype=object)}}
 A few preprocessed validation examples...
-{'inputs_plaintext': b'trivia question: how many balls are on a snooker table at the beginning of a game?', 'inputs': array([22377,   822,    10,   149,   186, 11607,    33,    30,     3,
-           9,     3,     7, 22563,    49,   953,    44,     8,  1849,
-          13,     3,     9,   467,    58,     1]), 'targets_plaintext': b'22', 'targets': array([1630,    1])}
-{'inputs_plaintext': b'trivia question: who was don mclean singing about in vincent', 'inputs': array([22377,   822,    10,   113,    47,   278,     3,    51, 16480,
-        8782,    81,    16,  4671,  3728,     1]), 'targets_plaintext': b'vincent van gogh', 'targets': array([4671, 3728, 4049,  281,  122,  107,    1])}
-{'inputs_plaintext': b'trivia question: planchet was the servant of which of the three musketeers, by alexandre dumas?', 'inputs': array([22377,   822,    10,   515,  1033,    17,    47,     8, 14620,
-          13,    84,    13,     8,   386,     3,  3252,  8044,    15,
-         277,     6,    57,  1240,   226,   232,    60,   146,  2754,
-          58,     1]), 'targets_plaintext': b"d'artagnan", 'targets': array([    3,    26,    31,  1408,     9, 11260,    29,     1])}
+{'inputs_plaintext': b'trivia question: which country has the international car registration code hkj?', 'inputs': array([22377,   822,    10,    84,   684,    65,     8,  1038,   443,
+        3816,  1081,     3,   107,   157,   354,    58,     1]), 'targets_plaintext': b'jordan', 'targets': array([    3, 12775,  3768,     1])}
+{'inputs_plaintext': b'trivia question: which is heaviest of all naturally-occurring elements?', 'inputs': array([22377,   822,    10,    84,    19,     3,    88,  2960,   222,
+          13,    66,  6212,    18, 13377,   450,  1007,  2479,    58,
+           1]), 'targets_plaintext': b'uranium', 'targets': array([   3, 2414,   29, 2552,    1])}
+{'inputs_plaintext': b'trivia question: "which american vocalist (described by the british newspaper ""the guardian"" as ""one of the greatest voices of her generation"") whose repertoire included jazz, blues, folk, gospel and pop, was unknown outside washington, d.c., until after she died of melanoma in 1996?"', 'inputs': array([22377,   822,    10,    96,  3339, 10211,  6721,   343,    41,
+         221, 22573,    57,     8,     3,  2160,    17,  1273,  8468,
+          96,   121,   532,  4879,    23,   152,   121,   121,    38,
+          96,   121,   782,    13,     8,  4016, 13256,    13,   160,
+        3381,   121,  8512,     3,  2544, 26661,  1285,  9948,     6,
+        1692,     7,     6, 12702,     6, 15491,    11,  2783,     6,
+          47,  7752,  1067,  6179,  6029,     6,     3,    26,     5,
+          75,     5,     6,   552,   227,   255,  3977,    13,     3,
+        2341,     9,  3114,     9,    16,  6911,  4609,     1]), 'targets_plaintext': b'eva cassidy', 'targets': array([   3, 4721, 1990,    7,   23,   26,   63,    1])}
